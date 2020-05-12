@@ -1,0 +1,11 @@
+[ {
+  "uid" : "92e526e5d79d25fa",
+  "name" : "test_DLZC1",
+  "time" : {
+    "start" : 1589296195338,
+    "stop" : 1589296201883,
+    "duration" : 6545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

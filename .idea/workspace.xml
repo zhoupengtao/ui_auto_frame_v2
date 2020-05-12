@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="352af9f9-483a-47ec-a8ee-fd0cecdd22f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObject/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/login_page_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/config_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/config_option.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/excel_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/excel_option.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/log_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/log_option.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/log_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObject/home_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/test_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/home_page_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/suite.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZIgg9wT3RYuXdIzOC53s3ey1TC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\UI_auto_project\Data" />
+      <recent name="F:\UI_auto_project\Logs" />
+      <recent name="F:\UI_auto_project\Reports" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\UI_auto_project" />
+      <recent name="F:\UI_auto_project\Common" />
+      <recent name="F:\UI_auto_project\Base" />
+      <recent name="F:\UI_auto_project\TestCases" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for login_page_case.Login_page_case">
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="UI_auto_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Base" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Base/base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="suite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="UI_auto_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/suite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for login_page_case.Login_page_case" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="UI_auto_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestCases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;login_page_case.Login_page_case&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in login_page_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="UI_auto_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestCases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCases/login_page_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in register_page_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="UI_auto_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestCases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCases/register_page_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for login_page_case.Login_page_case" />
+        <item itemvalue="Python tests.Unittests in login_page_case.py" />
+        <item itemvalue="Python.suite" />
+        <item itemvalue="Python.base" />
+        <item itemvalue="Python tests.Unittests in register_page_case.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="111&#10;&#10;# Conflicts:&#10;#&#9;readme.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="111&#10;&#10;# Conflicts:&#10;#&#9;readme.txt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Inspections" timestamp="1584537022892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1584537022892" />
+    <state x="552" y="178" width="816" height="731" key="#Intentions" timestamp="1585569441762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="816" height="731" key="#Intentions/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585569441762" />
+<<<<<<< HEAD
+=======
+    <state x="598" y="56" key="CommitChangelistDialog2" timestamp="1588862311395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="56" key="CommitChangelistDialog2/0.0.1920.1040/1920.-494.2048.1112@0.0.1920.1040" timestamp="1588862311395" />
+>>>>>>> 8701428... ceshi1
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585570049787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585570049787" />
+    <state width="1899" height="280" key="GridCell.Tab.0.bottom" timestamp="1585762222347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585762222347" />
+    <state width="1884" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-363.2048.1112@1920.-363.2048.1112" timestamp="1584730360462" />
+    <state width="1899" height="280" key="GridCell.Tab.0.center" timestamp="1585762222347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585762222347" />
+    <state width="1884" height="288" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-363.2048.1112@1920.-363.2048.1112" timestamp="1584730360462" />
+    <state width="1899" height="280" key="GridCell.Tab.0.left" timestamp="1585762222347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585762222347" />
+    <state width="1884" height="288" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-363.2048.1112@1920.-363.2048.1112" timestamp="1584730360462" />
+    <state width="1899" height="280" key="GridCell.Tab.0.right" timestamp="1585762222347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585762222347" />
+    <state width="1884" height="288" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-363.2048.1112@1920.-363.2048.1112" timestamp="1584730360462" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1585590336189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585590336189" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1585590336188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585590336188" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1585590336188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585590336188" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1585590336188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585590336188" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1584627441397">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1584627441397" />
+<<<<<<< HEAD
+=======
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588862320606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-494.2048.1112@0.0.1920.1040" timestamp="1588862320606" />
+    <state x="744" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1588862211873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040/1920.-494.2048.1112@0.0.1920.1040" timestamp="1588862211873" />
+>>>>>>> 8701428... ceshi1
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585589763068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-363.2048.1112@0.0.1920.1040" timestamp="1585589763068" />
+  </component>
+</project>

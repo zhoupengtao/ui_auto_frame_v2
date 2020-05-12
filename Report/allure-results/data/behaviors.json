@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Login_page_case",
+    "children" : [ {
+      "name" : "Login",
+      "children" : [ {
+        "name" : "test_DLZC1",
+        "uid" : "92e526e5d79d25fa",
+        "parentUid" : "d30e595f4cf1cc34bc5d317b7efb522e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589296195338,
+          "stop" : 1589296201883,
+          "duration" : 6545
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d30e595f4cf1cc34bc5d317b7efb522e"
+    } ],
+    "uid" : "6d268c889e9c0e7c87131ad3a250a147"
+  } ]
+}

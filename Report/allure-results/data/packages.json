@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCases.Login.test_login_page_case",
+    "children" : [ {
+      "name" : "test_DLZC1",
+      "uid" : "92e526e5d79d25fa",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589296195338,
+        "stop" : 1589296201883,
+        "duration" : 6545
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "TestCases.Login.test_login_page_case"
+  } ]
+}
