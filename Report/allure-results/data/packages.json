@@ -4,14 +4,14 @@
   "children" : [ {
     "name" : "TestCases.Login.test_login_page_case",
     "children" : [ {
-      "name" : "test_DLZC1",
-      "uid" : "92e526e5d79d25fa",
+      "name" : "执行测试用例用于登录模块",
+      "uid" : "369718aff7f1f13",
       "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
       "status" : "passed",
       "time" : {
-        "start" : 1589296195338,
-        "stop" : 1589296201883,
-        "duration" : 6545
+        "start" : 1589982808445,
+        "stop" : 1589982815169,
+        "duration" : 6724
       },
       "flaky" : false,
       "parameters" : [ ]

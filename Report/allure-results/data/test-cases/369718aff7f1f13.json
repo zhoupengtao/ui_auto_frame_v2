@@ -1,83 +1,85 @@
 {
-  "uid" : "92e526e5d79d25fa",
-  "name" : "test_DLZC1",
+  "uid" : "369718aff7f1f13",
+  "name" : "执行测试用例用于登录模块",
   "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC1",
   "historyId" : "2e70d922d75bb86f500f24f6fcdf8f27",
   "time" : {
-    "start" : 1589296195338,
-    "stop" : 1589296201883,
-    "duration" : 6545
+    "start" : 1589982808445,
+    "stop" : 1589982815169,
+    "duration" : 6724
   },
+  "description" : "测试登录",
+  "descriptionHtml" : "<p>测试登录</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "session_driver",
-    "time" : {
-      "start" : 1589296190030,
-      "stop" : 1589296195336,
-      "duration" : 5306
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "login_page_class_load",
     "time" : {
-      "start" : 1589296195337,
-      "stop" : 1589296195337,
+      "start" : 1589982808444,
+      "stop" : 1589982808444,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "session_driver",
+    "time" : {
+      "start" : 1589982803122,
+      "stop" : 1589982808444,
+      "duration" : 5322
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "afterStages" : [ {
-    "name" : "session_driver::0",
-    "time" : {
-      "start" : 1589296201885,
-      "stop" : 1589296203991,
-      "duration" : 2106
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "login_page_class_load::0",
     "time" : {
-      "start" : 1589296201884,
-      "stop" : 1589296201884,
+      "start" : 1589982815169,
+      "stop" : 1589982815169,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "session_driver::0",
+    "time" : {
+      "start" : 1589982815170,
+      "stop" : 1589982817289,
+      "duration" : 2119
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
-    "name" : "story",
-    "value" : "Login"
-  }, {
     "name" : "feature",
     "value" : "Login_page_case"
+  }, {
+    "name" : "story",
+    "value" : "Login"
   }, {
     "name" : "severity",
     "value" : "normal"
@@ -95,7 +97,7 @@
     "value" : "DESKTOP-SM7DO0G"
   }, {
     "name" : "thread",
-    "value" : "13072-MainThread"
+    "value" : "14740-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -110,7 +112,15 @@
     "value" : "allure2"
   } ],
   "parameters" : [ ],
-  "links" : [ ],
+  "links" : [ {
+    "name" : "测试用例位置",
+    "url" : "https://www.sina.com",
+    "type" : "test_case"
+  }, {
+    "name" : "连接跳转百度",
+    "url" : "https://www.baidu.com",
+    "type" : "link"
+  } ],
   "hidden" : false,
   "retry" : false,
   "extra" : {
@@ -119,6 +129,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "92e526e5d79d25fa.json",
+  "source" : "369718aff7f1f13.json",
   "parameterValues" : [ ]
 }

@@ -8,13 +8,16 @@ from selenium.webdriver.chrome.options import Options
 import pytest
 import allure
 from PageObject.login_page import Login_page
-# from PageObject.buy_page import Buy_page as buy_page
 
 @allure.feature("Login_page_case")
 class Test_Login_page_case:
 
     @allure.story("Login")
     @allure.severity("normal")
+    @allure.description("测试登录")
+    @allure.link("https://www.baidu.com", name="连接跳转百度")
+    @allure.testcase("https://www.sina.com", name="测试用例位置")
+    @allure.title("执行测试用例用于登录模块")
     def test_DLZC1(self, login_page_class_load):
         print(login_page_class_load)
         login_page_class_load.login_by_config_url()

@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "DESKTOP-SM7DO0G",
     "children" : [ {
-      "name" : "13072-MainThread",
+      "name" : "14740-MainThread",
       "children" : [ {
-        "name" : "test_DLZC1",
-        "uid" : "92e526e5d79d25fa",
-        "parentUid" : "49a64e0f10e3c423f17591610f5a75b3",
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "369718aff7f1f13",
+        "parentUid" : "47d3cab23aee64b9731fe0787b84b128",
         "status" : "passed",
         "time" : {
-          "start" : 1589296195338,
-          "stop" : 1589296201883,
-          "duration" : 6545
+          "start" : 1589982808445,
+          "stop" : 1589982815169,
+          "duration" : 6724
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "49a64e0f10e3c423f17591610f5a75b3"
+      "uid" : "47d3cab23aee64b9731fe0787b84b128"
     } ],
     "uid" : "ee9a0b03bf3c2b50aec9ec4813ea4ffd"
   } ]

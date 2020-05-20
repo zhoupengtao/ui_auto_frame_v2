@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue May 12 23:09:55 CST 2020","Tue May 12 23:10:01 CST 2020","6545","TestCases.Login","test_login_page_case","Test_Login_page_case","","","test_DLZC1",""
+"passed","Wed May 20 21:53:28 CST 2020","Wed May 20 21:53:35 CST 2020","6724","TestCases.Login","test_login_page_case","Test_Login_page_case","","","执行测试用例用于登录模块","测试登录"

@@ -8,6 +8,7 @@ import os
 import sys
 import pytest
 import allure
+
 root_dir = os.path.dirname(__file__)
 if __name__ == "__main__":
     report_dir = os.path.abspath("./Reports")

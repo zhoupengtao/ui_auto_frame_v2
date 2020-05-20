@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from Common.log_option import log,log_INFO,log_ERROR,log_DEBUG,log_WARNING
+from Common.log_option import log, log_INFO, log_ERROR, log_DEBUG, log_WARNING
 from Common.config_option import Config_option
 
 
@@ -148,8 +148,24 @@ class Base:
         except Exception as e:
             return False
 
+    def screen_picture(self):
+        """
+        截图操作
+        @return:
+        """
+        try:
+            picture_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+            print(picture_time)
+            picture_url = self.driver.get_screenshot_as_file("../Report/picture/" + picture_time + ".png")
+            print(picture_url)
+        except Exception as e:
+            print(e)
+        finally:
+            return picture_url
+
+
 
 if __name__ == "__main__":
     base = Base(webdriver.Chrome())
     base.login_by_config_url()
-    base.find_element((By.NAME, "Username"))
+    base.screen_picture()
