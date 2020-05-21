@@ -1,10 +1,10 @@
-#UI_auto_project框架解释
+#UI_auto_project框架解释:使用pytest+selenium+allure
 #Base模块封装操作元素的公共方法
 #Common模块是封装的读取配置文件的公共方法，类似于util工具类
 #Data模块，用于存放数据驱动源数据
 #Logs模块，用于生成日志文件
 #PageObject模块提取页面对象封装公共操作方法
-#Reports模块，存放测试报告，以及测试报告的生成模板HTMLTestRunner.py
+#Report模块，存放测试报告，以及测试报告的生成模板allure
 #TestCases模块，用于存放测试case
 
 
@@ -20,7 +20,7 @@
 #环境说明：
 #开发工具：pycharm
 #python版本：python3.8
-#测试case总入口：suite.py
+#测试case总入口：run.py
 #浏览器：Chrome
 #webdriver请选择对应Chrome版本的driver，并且放入python的安装目录中
 
