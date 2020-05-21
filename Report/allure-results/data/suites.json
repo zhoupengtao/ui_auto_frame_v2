@@ -9,13 +9,13 @@
         "name" : "Test_Login_page_case",
         "children" : [ {
           "name" : "执行测试用例用于登录模块",
-          "uid" : "369718aff7f1f13",
+          "uid" : "8ef14628d8a70dfc",
           "parentUid" : "f1f13c74b1da26c3ea4827e6fceef59f",
           "status" : "passed",
           "time" : {
-            "start" : 1589982808445,
-            "stop" : 1589982815169,
-            "duration" : 6724
+            "start" : 1590039980715,
+            "stop" : 1590039985558,
+            "duration" : 4843
           },
           "flaky" : false,
           "parameters" : [ ]

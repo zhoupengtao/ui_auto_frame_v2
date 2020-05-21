@@ -1,1 +1,26 @@
-[ ]
+[
+    {
+        "name": "测试地址",
+        "values": [
+            "http://beta.inconnect.inhand.design/"
+        ]
+    },
+    {
+        "name": "测试版本号",
+        "values": [
+            "V0.12.0"
+        ]
+    },
+    {
+        "name": "测试账户",
+        "values": [
+            "luozw@inhand.com.cn"
+        ]
+    },
+    {
+        "name": "测试说明",
+        "values": [
+            "测试beta"
+        ]
+    }
+]

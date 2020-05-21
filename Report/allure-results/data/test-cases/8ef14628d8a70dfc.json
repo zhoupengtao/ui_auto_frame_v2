@@ -1,88 +1,103 @@
 {
-  "uid" : "369718aff7f1f13",
+  "uid" : "8ef14628d8a70dfc",
   "name" : "执行测试用例用于登录模块",
   "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC1",
   "historyId" : "2e70d922d75bb86f500f24f6fcdf8f27",
   "time" : {
-    "start" : 1589982808445,
-    "stop" : 1589982815169,
-    "duration" : 6724
+    "start" : 1590039980715,
+    "stop" : 1590039985558,
+    "duration" : 4843
   },
   "description" : "测试登录",
   "descriptionHtml" : "<p>测试登录</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "login_page_class_load",
+    "name" : "session_driver",
     "time" : {
-      "start" : 1589982808444,
-      "stop" : 1589982808444,
+      "start" : 1590039977452,
+      "stop" : 1590039980710,
+      "duration" : 3258
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1590039980711,
+      "stop" : 1590039980711,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false
   }, {
-    "name" : "session_driver",
+    "name" : "login_page_class_load",
     "time" : {
-      "start" : 1589982803122,
-      "stop" : 1589982808444,
-      "duration" : 5322
+      "start" : 1590039980710,
+      "stop" : 1590039980710,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false
   } ],
   "afterStages" : [ {
+    "name" : "session_driver::0",
+    "time" : {
+      "start" : 1590039985560,
+      "stop" : 1590039987877,
+      "duration" : 2317
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
     "name" : "login_page_class_load::0",
     "time" : {
-      "start" : 1589982815169,
-      "stop" : 1589982815169,
+      "start" : 1590039985559,
+      "stop" : 1590039985559,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
-  }, {
-    "name" : "session_driver::0",
-    "time" : {
-      "start" : 1589982815170,
-      "stop" : 1589982817289,
-      "duration" : 2119
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
     "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
     "name" : "feature",
     "value" : "Login_page_case"
   }, {
     "name" : "story",
     "value" : "Login"
-  }, {
-    "name" : "severity",
-    "value" : "normal"
   }, {
     "name" : "parentSuite",
     "value" : "TestCases.Login"
@@ -94,10 +109,10 @@
     "value" : "Test_Login_page_case"
   }, {
     "name" : "host",
-    "value" : "DESKTOP-SM7DO0G"
+    "value" : "DESKTOP-NTLLTVC"
   }, {
     "name" : "thread",
-    "value" : "14740-MainThread"
+    "value" : "3296-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -129,6 +144,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "369718aff7f1f13.json",
+  "source" : "8ef14628d8a70dfc.json",
   "parameterValues" : [ ]
 }

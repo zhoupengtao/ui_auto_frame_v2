@@ -1,0 +1,6 @@
+﻿allure_environment:
+  URL: 'http://beta.inconnect.inhand.design/'
+  version: 'V0.12.0'
+  description: '测试beta'
+  username: 'luozw@inhand.com.cn'
+
