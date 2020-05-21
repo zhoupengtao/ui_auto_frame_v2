@@ -34,8 +34,7 @@ def modify_report_environment_file():
 if __name__ == "__main__":
     report_dir = os.path.abspath("./Report")
     report_widgets_dir = os.path.abspath("./Report/allure-results")
-    # 定义allure报告环境信息
-    modify_report_environment_file()
+
     # 定义测试用例集合
     # 定义features集合
     allure_features = ["--allure-features"]
@@ -57,6 +56,8 @@ if __name__ == "__main__":
     except Exception as e:
         print('命令【{}】执行失败！'.format(cmd))
         sys.exit()
+    # 定义allure报告环境信息
+    modify_report_environment_file()
     # 打印url，方便直接访问
     url = '报告链接：http://127.0.0.1:63342/{}/Report/allure-results/index.html'.format(root_dir.split('/')[-1])
     print(url)

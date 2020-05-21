@@ -8,7 +8,8 @@ from datetime import datetime, timedelta
 import math
 from hashlib import md5
 from IPy import IP
-
+from Common.file_option import File_option
+import time
 import requests
 import xeger
 import qrcode
@@ -234,3 +235,20 @@ class PubMethod:
         lng = '%.15f' % _longitude
         lat = '%.15f' % _latitude
         return lat, lng
+
+    @staticmethod
+    def screen_picture(driver):
+        """
+        截图操作
+        @return:
+        """
+        try:
+            picture_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+            file_path = "Report/picture"
+            file_name = picture_time + ".png"
+            File_option.file_mkdir(file_path)
+            picture_url = driver.get_screenshot_as_file(file_path + '/' + file_name)
+        except Exception as e:
+            print(e)
+        finally:
+            return picture_url

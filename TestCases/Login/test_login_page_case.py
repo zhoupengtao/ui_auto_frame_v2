@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 import pytest
 import allure
 from PageObject.login_page import Login_page
+from Common.publicMethod import PubMethod
 
 @allure.feature("Login_page_case")
 class Test_Login_page_case:
@@ -18,7 +19,7 @@ class Test_Login_page_case:
     @allure.link("https://www.baidu.com", name="连接跳转百度")
     @allure.testcase("https://www.sina.com", name="测试用例位置")
     @allure.title("执行测试用例用于登录模块")
-    def test_DLZC1(self, login_page_class_load):
+    def test_DLZC1(self, login_page_class_load, session_driver):
         print(login_page_class_load)
         login_page_class_load.login_by_config_url()
         username_input_attribute_value = login_page_class_load.get_username_attribute_value()
@@ -26,7 +27,11 @@ class Test_Login_page_case:
         # reset_btn_text = login_page.find_button_reset_password()
         # login_btn_text = login_page.find_button_login()
         # register_btn_text = login_page.find_button_register()
-        assert username_input_attribute_value == "邮箱/手机号码"
+        try:
+            assert username_input_attribute_value != "邮箱/手机号码"
+        except Exception as e:
+            print("测试用例执行失败：{}".format(e))
+            PubMethod.screen_picture(session_driver)
         # self.assertEqual(password_input_attribute_value, "密码")
         # self.assertEqual(reset_btn_text, "忘记密码？")
         # self.assertEqual(login_btn_text, "登录")
