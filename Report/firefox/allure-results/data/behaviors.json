@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Login_page_case",
+    "children" : [ {
+      "name" : "Login",
+      "children" : [ {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "976d21a30ccb03fe",
+        "parentUid" : "d30e595f4cf1cc34bc5d317b7efb522e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590141677637,
+          "stop" : 1590141683737,
+          "duration" : 6100
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d30e595f4cf1cc34bc5d317b7efb522e"
+    } ],
+    "uid" : "6d268c889e9c0e7c87131ad3a250a147"
+  } ]
+}

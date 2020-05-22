@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestCases.Login",
+    "children" : [ {
+      "name" : "test_login_page_case",
+      "children" : [ {
+        "name" : "Test_Login_page_case",
+        "children" : [ {
+          "name" : "执行测试用例用于登录模块",
+          "uid" : "976d21a30ccb03fe",
+          "parentUid" : "f1f13c74b1da26c3ea4827e6fceef59f",
+          "status" : "broken",
+          "time" : {
+            "start" : 1590141677637,
+            "stop" : 1590141683737,
+            "duration" : 6100
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f1f13c74b1da26c3ea4827e6fceef59f"
+      } ],
+      "uid" : "dcbf3e1bbb99ec79aca8993db78f0089"
+    } ],
+    "uid" : "92355321ce0c6990cd59ca4955291ae3"
+  } ]
+}

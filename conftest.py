@@ -26,21 +26,16 @@ def session_driver():
 @pytest.fixture(scope="session")
 def session_remote_driver():
     current_dir = os.path.dirname(__file__)
-    print(current_dir)
     config_path = os.path.join(current_dir, "Conf", "config.yaml")
-    print(config_path)
-    local_distributed_config = PubMethod.read_yaml(config_path)
-    distributed_config_dic = local_distributed_config["local_distributed_config"]
-    print(distributed_config_dic)
-    for host, browser in distributed_config_dic.items():
-        print(host)
-        print(browser)
-        driver = Remote(command_executor=host["host"],
-                        desired_capabilities={'platform': 'ANY', 'browserName': browser["browser"], 'version': '',
-                                              'javascriptEnabled': True})
-        yield driver
-        driver.close()
-        driver.quit()
+    local_driver_conf = PubMethod.read_yaml(config_path)
+    local_driver_dir = local_driver_conf["local_driver_conf"]
+    print(local_driver_dir)
+    driver = Remote(command_executor=local_driver_dir["host"],
+                    desired_capabilities={'platform': 'ANY', 'browserName': local_driver_dir["browser"], 'version': '',
+                                          'javascriptEnabled': True})
+    yield driver
+    driver.close()
+    driver.quit()
 
 
 if __name__ == '__main__':

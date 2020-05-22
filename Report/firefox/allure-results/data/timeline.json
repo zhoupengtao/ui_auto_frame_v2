@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-NTLLTVC",
+    "children" : [ {
+      "name" : "16044-Thread-2",
+      "children" : [ {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "976d21a30ccb03fe",
+        "parentUid" : "a153e061e82b97915ffd42e0c4cbbacc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590141677637,
+          "stop" : 1590141683737,
+          "duration" : 6100
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a153e061e82b97915ffd42e0c4cbbacc"
+    } ],
+    "uid" : "364c08e971958ee45e5acaf71c195702"
+  } ]
+}

@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection",
+      "children" : [ {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "976d21a30ccb03fe",
+        "parentUid" : "6c3790414204e9ed1de36a5a288553ef",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590141677637,
+          "stop" : 1590141683737,
+          "duration" : 6100
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c3790414204e9ed1de36a5a288553ef"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

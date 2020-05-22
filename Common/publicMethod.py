@@ -130,6 +130,9 @@ class PubMethod:
             print(file, '文件不存在')
             sys.exit()
 
+
+
+
     @staticmethod
     def create_ip_address():
         xeger_client = xeger.Xeger()

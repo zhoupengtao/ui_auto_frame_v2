@@ -2,20 +2,19 @@
   "2e70d922d75bb86f500f24f6fcdf8f27" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "970c74dc590a73c7",
-      "status" : "broken",
-      "statusDetails" : "TypeError: string indices must be integers",
+      "uid" : "31be224414922e8a",
+      "status" : "passed",
       "time" : {
-        "start" : 1590131340704,
-        "stop" : 1590131340704,
-        "duration" : 0
+        "start" : 1590134474564,
+        "stop" : 1590134479745,
+        "duration" : 5181
       }
     } ]
   }
