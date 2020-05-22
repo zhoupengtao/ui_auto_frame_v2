@@ -7,7 +7,8 @@
 import pytest
 from PageObject.login_page import Login_page
 
+
 @pytest.fixture(scope="module")
-def login_page_class_load(session_driver):
-    login_page = Login_page(session_driver)
+def login_page_class_load(session_remote_driver):
+    login_page = Login_page(session_remote_driver)
     yield login_page

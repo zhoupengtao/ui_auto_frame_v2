@@ -20,6 +20,7 @@ class Test_Login_page_case:
     @allure.testcase("https://www.sina.com", name="测试用例位置")
     @allure.title("执行测试用例用于登录模块")
     def test_DLZC1(self, login_page_class_load, session_driver):
+        print("开始登陆测试")
         print(login_page_class_load)
         login_page_class_load.login_by_config_url()
         username_input_attribute_value = login_page_class_load.get_username_attribute_value()

@@ -1,11 +1,11 @@
 [ {
-  "uid" : "8ef14628d8a70dfc",
+  "uid" : "970c74dc590a73c7",
   "name" : "执行测试用例用于登录模块",
   "time" : {
-    "start" : 1590039980715,
-    "stop" : 1590039985558,
-    "duration" : 4843
+    "start" : 1590131340704,
+    "stop" : 1590131340704,
+    "duration" : 0
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 } ]

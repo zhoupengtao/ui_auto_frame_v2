@@ -50,7 +50,7 @@ if __name__ == "__main__":
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
-    cmd = 'allure generate ./Report/ -o ./Report/allure-results'
+    cmd = 'allure generate ./Report/ -o ./Report/allure-results --clean'
     try:
         os.system(cmd)
     except Exception as e:

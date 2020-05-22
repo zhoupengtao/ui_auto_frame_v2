@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: string indices must be integers",
+      "children" : [ {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "970c74dc590a73c7",
+        "parentUid" : "72c0936964a9b2fe1cfe23cf31d1b5b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590131340704,
+          "stop" : 1590131340704,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72c0936964a9b2fe1cfe23cf31d1b5b6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

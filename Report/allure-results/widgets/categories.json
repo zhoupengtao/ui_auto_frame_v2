@@ -1,28 +1,15 @@
-[
-  {
-    "name": "Passed tests",
-    "matchedStatuses": ["passed"]
-  },
-  {
-    "name": "Ignored tests", 
-    "matchedStatuses": ["skipped"] 
-  },
-  {
-    "name": "Infrastructure problems",
-    "matchedStatuses": ["broken", "failed"],
-    "messageRegex": ".*bye-bye.*" 
-  },
-  {
-    "name": "Outdated tests",
-    "matchedStatuses": ["broken"],
-    "traceRegex": ".*FileNotFoundException.*" 
-  },
-  {
-    "name": "Product defects",
-    "matchedStatuses": ["failed"]
-  },
-  {
-    "name": "Test defects",
-    "matchedStatuses": ["broken"]
-  }
-]
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "bdbf199525818fae7a8651db9eafe741",
+    "name" : "Test defects",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

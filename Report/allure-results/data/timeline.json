@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "DESKTOP-NTLLTVC",
     "children" : [ {
-      "name" : "3296-MainThread",
+      "name" : "13508-MainThread",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "8ef14628d8a70dfc",
-        "parentUid" : "234a93875a593e40ac0a4b3b47be6482",
-        "status" : "passed",
+        "uid" : "970c74dc590a73c7",
+        "parentUid" : "1a33776c7e11da7b1358fd34a733782c",
+        "status" : "broken",
         "time" : {
-          "start" : 1590039980715,
-          "stop" : 1590039985558,
-          "duration" : 4843
+          "start" : 1590131340704,
+          "stop" : 1590131340704,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "234a93875a593e40ac0a4b3b47be6482"
+      "uid" : "1a33776c7e11da7b1358fd34a733782c"
     } ],
     "uid" : "364c08e971958ee45e5acaf71c195702"
   } ]

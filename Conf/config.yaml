@@ -1,6 +1,18 @@
-﻿allure_environment:
+﻿#allure报告环境变量配置
+allure_environment:
   URL: 'http://beta.inconnect.inhand.design/'
   version: 'V0.12.0'
   description: '测试beta'
   username: 'luozw@inhand.com.cn'
 
+#本地分布式执行case，操作配置
+local_distributed_config:
+  node1:
+    host: 'http://127.0.0.1:5555/wd/hub'
+    brower: 'chrome'
+  node2:
+    host: 'http://127.0.0.1:5556/wd/hub'
+    brower: 'internet explorer'
+  node3:
+    host: 'http://127.0.0.1:5557/wd/hub'
+    brower: 'firefox'
