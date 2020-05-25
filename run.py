@@ -8,6 +8,7 @@ import os
 import sys
 import json
 import yaml
+import time
 import pytest
 import threading
 from Common.publicMethod import PubMethod
@@ -15,6 +16,7 @@ from selenium.webdriver import Remote
 
 root_dir = os.path.dirname(__file__)
 config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
+
 
 def modify_report_environment_file(report_widgets_dir):
     """
@@ -85,8 +87,23 @@ def multi_threading_execute(node_count, host_path, browser_version):
     run_all_case(browser_version)
 
 
+def execute_selenium_cmd():
+    # 需要启动三个进程，使用多线程
+    try:
+        # 启动hub节点,启动之前需要下载selenium-server-standalone，以及对应的browser的driver
+        res = os.system('java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role hub')
+        print(res)
+        # 启动node节点,注册到hub节点，启动三个节点，适配三种浏览器，节点和浏览器的对应关系通过driver的remote的远程调用来进行，指定IP和browser
+        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register")
+        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5556 -hub http://localhost:4444/grid/register")
+        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5557 -hub http://localhost:4444/grid/register")
+    except Exception as e:
+        print("输出异常项：{}".format(e))
+
+
 if __name__ == "__main__":
-    #run_all_case(browser=None)
+    # run_all_case(browser=None)
+    # execute_selenium_cmd()
     current_dir = os.path.dirname(__file__)
     config_path = os.path.join(current_dir, "Conf", "config.yaml")
     local_distributed_config = PubMethod.read_yaml(config_path)
