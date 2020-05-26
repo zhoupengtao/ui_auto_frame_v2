@@ -7,13 +7,25 @@
       "name" : "selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "976d21a30ccb03fe",
+        "uid" : "90bd2817fa7f9991",
         "parentUid" : "6c3790414204e9ed1de36a5a288553ef",
         "status" : "broken",
         "time" : {
-          "start" : 1590141677637,
-          "stop" : 1590141683737,
-          "duration" : 6100
+          "start" : 1590488874662,
+          "stop" : 1590488878729,
+          "duration" : 4067
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test",
+        "uid" : "e0f3e53b9f44ee1b",
+        "parentUid" : "6c3790414204e9ed1de36a5a288553ef",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590488883831,
+          "stop" : 1590488891561,
+          "duration" : 7730
         },
         "flaky" : false,
         "parameters" : [ ]

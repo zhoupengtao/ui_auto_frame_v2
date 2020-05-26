@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "uid" : "7204042093376e2c",
+  "name" : "test",
+  "time" : {
+    "start" : 1590486053157,
+    "stop" : 1590486060337,
+    "duration" : 7180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52d9611c96d14c6f",
+  "name" : "执行测试用例用于登录模块",
+  "time" : {
+    "start" : 1590486044567,
+    "stop" : 1590486049524,
+    "duration" : 4957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

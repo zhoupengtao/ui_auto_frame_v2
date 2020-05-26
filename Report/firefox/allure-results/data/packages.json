@@ -5,13 +5,25 @@
     "name" : "TestCases.Login.test_login_page_case",
     "children" : [ {
       "name" : "执行测试用例用于登录模块",
-      "uid" : "976d21a30ccb03fe",
+      "uid" : "90bd2817fa7f9991",
       "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
       "status" : "broken",
       "time" : {
-        "start" : 1590141677637,
-        "stop" : 1590141683737,
-        "duration" : 6100
+        "start" : 1590488874662,
+        "stop" : 1590488878729,
+        "duration" : 4067
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "e0f3e53b9f44ee1b",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "broken",
+      "time" : {
+        "start" : 1590488883831,
+        "stop" : 1590488891561,
+        "duration" : 7730
       },
       "flaky" : false,
       "parameters" : [ ]

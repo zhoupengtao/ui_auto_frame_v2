@@ -53,7 +53,8 @@ def run_all_case(browser):
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
-    cmd = 'allure generate ./Report -o ./Report/{}/allure-results --clean'.format(browser)
+    cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser, browser)
+    print("cmd:{}".format(cmd))
     try:
         os.system(cmd)
     except Exception as e:
@@ -62,7 +63,7 @@ def run_all_case(browser):
     # 定义allure报告环境信息
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
-    url = '报告链接：http://127.0.0.1:63342/{}/Report/allure-results/index.html'.format(root_dir.split('/')[-1])
+    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1], browser)
     print(url)
 
 
@@ -77,14 +78,13 @@ def multi_threading_execute(node_count, host_path, browser_version):
     local_driver_dir["node"] = node_count
     local_driver_dir["host"] = host_path
     local_driver_dir["browser"] = browser_version
-    print(local_driver_dir)
-    print(type(local_driver_dir))
     print(local_driver_conf)
     with open(config_path, 'w', encoding="utf-8") as fw:
         yaml.dump(local_driver_conf, fw, encoding="utf-8")
         fw.close()
-    thread_lock.release()
+
     run_all_case(browser_version)
+    thread_lock.release()
 
 
 def execute_selenium_cmd():
@@ -102,7 +102,7 @@ def execute_selenium_cmd():
 
 
 if __name__ == "__main__":
-    # run_all_case(browser=None)
+    # run_all_case()
     # execute_selenium_cmd()
     current_dir = os.path.dirname(__file__)
     config_path = os.path.join(current_dir, "Conf", "config.yaml")

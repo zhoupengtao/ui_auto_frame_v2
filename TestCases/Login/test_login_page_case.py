@@ -7,8 +7,10 @@ from Common.log_option import log, log_INFO, log_ERROR, log_DEBUG, log_WARNING
 from selenium.webdriver.chrome.options import Options
 import pytest
 import allure
+from selenium import webdriver
 from PageObject.login_page import Login_page
 from Common.publicMethod import PubMethod
+
 
 @allure.feature("Login_page_case")
 class Test_Login_page_case:
@@ -19,7 +21,7 @@ class Test_Login_page_case:
     @allure.link("https://www.baidu.com", name="连接跳转百度")
     @allure.testcase("https://www.sina.com", name="测试用例位置")
     @allure.title("执行测试用例用于登录模块")
-    def test_DLZC1(self, login_page_class_load, session_driver):
+    def test_DLZC1(self, login_page_class_load, session_remote_driver):
         print("开始登陆测试")
         print(login_page_class_load)
         login_page_class_load.login_by_config_url()
@@ -29,20 +31,23 @@ class Test_Login_page_case:
         # login_btn_text = login_page.find_button_login()
         # register_btn_text = login_page.find_button_register()
         try:
-            assert username_input_attribute_value != "邮箱/手机号码"
+            assert username_input_attribute_value == "邮箱/手机号码"
         except Exception as e:
             print("测试用例执行失败：{}".format(e))
-            PubMethod.screen_picture(session_driver)
+            PubMethod.screen_picture(session_remote_driver)
         # self.assertEqual(password_input_attribute_value, "密码")
         # self.assertEqual(reset_btn_text, "忘记密码？")
         # self.assertEqual(login_btn_text, "登录")
         # self.assertEqual(register_btn_text, "注册")
 
-    # def test_DLZC2(self):
-    #     self.login_page.login_by_config_url()
-    #     self.login_page.click_reset_btn()
-    #     reset_title = self.login_page.get_reset_page_title()
-    #     self.assertEqual(reset_title, "找回密码")
+    @allure.story("Login")
+    @allure.severity("normal")
+    @allure.title("test")
+    def test_DLZC2(self, login_page_class_load):
+        login_page_class_load.login_by_config_url()
+        login_page_class_load.click_reset_btn()
+        reset_title = login_page_class_load.get_reset_page_title()
+        assert reset_title == "找回密码"
     #
     # def test_DLZC3(self):
     #     self.login_page.login_by_config_url()

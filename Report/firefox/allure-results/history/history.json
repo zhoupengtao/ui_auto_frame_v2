@@ -1,4 +1,24 @@
 {
+  "f29699b788a74b6e236a15253e9b9a81" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e0f3e53b9f44ee1b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection",
+      "time" : {
+        "start" : 1590488883831,
+        "stop" : 1590488891561,
+        "duration" : 7730
+      }
+    } ]
+  },
   "2e70d922d75bb86f500f24f6fcdf8f27" : {
     "statistic" : {
       "failed" : 0,
@@ -9,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "976d21a30ccb03fe",
+      "uid" : "90bd2817fa7f9991",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.InvalidSessionIdException: Message: Tried to run command without establishing a connection",
       "time" : {
-        "start" : 1590141677637,
-        "stop" : 1590141683737,
-        "duration" : 6100
+        "start" : 1590488874662,
+        "stop" : 1590488878729,
+        "duration" : 4067
       }
     } ]
   }
