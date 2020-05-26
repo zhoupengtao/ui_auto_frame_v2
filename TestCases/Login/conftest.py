@@ -7,6 +7,7 @@
 import os
 import pytest
 from selenium import webdriver
+from Common.global_var import GlobalVar
 from selenium.webdriver import Remote
 from PageObject.login_page import Login_page
 from Common.publicMethod import PubMethod
@@ -39,7 +40,7 @@ def session_remote_driver():
                     desired_capabilities={'platform': 'ANY', 'browserName': local_driver_dir["browser"], 'version': '',
                                           'javascriptEnabled': True})
     yield driver
-    driver.close()
+    #driver.close()
     driver.quit()
 
 

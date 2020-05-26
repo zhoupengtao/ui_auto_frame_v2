@@ -1,103 +1,88 @@
 {
-  "uid" : "52d9611c96d14c6f",
+  "uid" : "56ed05a2a0e7e3bf",
   "name" : "执行测试用例用于登录模块",
   "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC1",
   "historyId" : "2e70d922d75bb86f500f24f6fcdf8f27",
   "time" : {
-    "start" : 1590486044567,
-    "stop" : 1590486049524,
-    "duration" : 4957
+    "start" : 1590500611856,
+    "stop" : 1590500616281,
+    "duration" : 4425
   },
   "description" : "测试登录",
   "descriptionHtml" : "<p>测试登录</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "session_remote_driver",
-    "time" : {
-      "start" : 1590486040609,
-      "stop" : 1590486044564,
-      "duration" : 3955
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "__pytest_repeat_step_number",
-    "time" : {
-      "start" : 1590486040609,
-      "stop" : 1590486040609,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
     "name" : "login_page_class_load",
     "time" : {
-      "start" : 1590486044564,
-      "stop" : 1590486044565,
-      "duration" : 1
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
-  } ],
-  "afterStages" : [ {
-    "name" : "session_remote_driver::0",
-    "time" : {
-      "start" : 1590486049526,
-      "stop" : 1590486049914,
-      "duration" : 388
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "login_page_class_load::0",
-    "time" : {
-      "start" : 1590486049525,
-      "stop" : 1590486049525,
+      "start" : 1590500611854,
+      "stop" : 1590500611854,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
+    "stepsCount" : 0,
     "hasContent" : false,
-    "stepsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "session_remote_driver",
+    "time" : {
+      "start" : 1590500606046,
+      "stop" : 1590500611854,
+      "duration" : 5808
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "login_page_class_load::0",
+    "time" : {
+      "start" : 1590500616281,
+      "stop" : 1590500616281,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "session_remote_driver::0",
+    "time" : {
+      "start" : 1590500616282,
+      "stop" : 1590500620059,
+      "duration" : 3777
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
     "name" : "feature",
     "value" : "Login_page_case"
   }, {
-    "name" : "story",
-    "value" : "Login"
-  }, {
     "name" : "severity",
     "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Login"
   }, {
     "name" : "parentSuite",
     "value" : "TestCases.Login"
@@ -109,10 +94,10 @@
     "value" : "Test_Login_page_case"
   }, {
     "name" : "host",
-    "value" : "DESKTOP-NTLLTVC"
+    "value" : "DESKTOP-SM7DO0G"
   }, {
     "name" : "thread",
-    "value" : "17192-Thread-2"
+    "value" : "15212-Thread-1"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -144,6 +129,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "52d9611c96d14c6f.json",
+  "source" : "56ed05a2a0e7e3bf.json",
   "parameterValues" : [ ]
 }

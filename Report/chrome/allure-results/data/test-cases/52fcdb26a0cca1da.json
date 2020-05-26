@@ -1,20 +1,20 @@
 {
-  "uid" : "7204042093376e2c",
+  "uid" : "52fcdb26a0cca1da",
   "name" : "test",
   "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC2",
   "historyId" : "f29699b788a74b6e236a15253e9b9a81",
   "time" : {
-    "start" : 1590486053157,
-    "stop" : 1590486060337,
-    "duration" : 7180
+    "start" : 1590508324056,
+    "stop" : 1590508332944,
+    "duration" : 8888
   },
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
     "name" : "login_page_class_load",
     "time" : {
-      "start" : 1590486053157,
-      "stop" : 1590486053157,
+      "start" : 1590508324056,
+      "stop" : 1590508324056,
       "duration" : 0
     },
     "status" : "passed",
@@ -23,29 +23,14 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
-  }, {
-    "name" : "__pytest_repeat_step_number",
-    "time" : {
-      "start" : 1590486049923,
-      "stop" : 1590486049923,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "session_remote_driver",
     "time" : {
-      "start" : 1590486049924,
-      "stop" : 1590486053157,
-      "duration" : 3233
+      "start" : 1590508318278,
+      "stop" : 1590508324055,
+      "duration" : 5777
     },
     "status" : "passed",
     "steps" : [ ],
@@ -53,14 +38,14 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "afterStages" : [ {
     "name" : "login_page_class_load::0",
     "time" : {
-      "start" : 1590486060337,
-      "stop" : 1590486060337,
+      "start" : 1590508332945,
+      "stop" : 1590508332945,
       "duration" : 0
     },
     "status" : "passed",
@@ -69,14 +54,14 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "session_remote_driver::0",
     "time" : {
-      "start" : 1590486060339,
-      "stop" : 1590486060511,
-      "duration" : 172
+      "start" : 1590508332946,
+      "stop" : 1590508332981,
+      "duration" : 35
     },
     "status" : "passed",
     "steps" : [ ],
@@ -84,18 +69,18 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "feature",
     "value" : "Login_page_case"
   }, {
-    "name" : "story",
-    "value" : "Login"
-  }, {
     "name" : "severity",
     "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Login"
   }, {
     "name" : "parentSuite",
     "value" : "TestCases.Login"
@@ -107,10 +92,10 @@
     "value" : "Test_Login_page_case"
   }, {
     "name" : "host",
-    "value" : "DESKTOP-NTLLTVC"
+    "value" : "DESKTOP-SM7DO0G"
   }, {
     "name" : "thread",
-    "value" : "17192-Thread-2"
+    "value" : "14124-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -134,6 +119,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7204042093376e2c.json",
+  "source" : "52fcdb26a0cca1da.json",
   "parameterValues" : [ ]
 }

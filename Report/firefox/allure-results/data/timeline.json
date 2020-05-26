@@ -2,36 +2,36 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "DESKTOP-NTLLTVC",
+    "name" : "DESKTOP-SM7DO0G",
     "children" : [ {
-      "name" : "6228-Thread-1",
+      "name" : "15212-Thread-1",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "90bd2817fa7f9991",
-        "parentUid" : "363b3dcf2309658fff7c0f7043ab197c",
-        "status" : "broken",
+        "uid" : "56ed05a2a0e7e3bf",
+        "parentUid" : "cacc8bf0cfbad7ff5cf380db837e0ded",
+        "status" : "passed",
         "time" : {
-          "start" : 1590488874662,
-          "stop" : 1590488878729,
-          "duration" : 4067
+          "start" : 1590500611856,
+          "stop" : 1590500616281,
+          "duration" : 4425
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "test",
-        "uid" : "e0f3e53b9f44ee1b",
-        "parentUid" : "363b3dcf2309658fff7c0f7043ab197c",
-        "status" : "broken",
+        "uid" : "f8cb18b4aab21aca",
+        "parentUid" : "cacc8bf0cfbad7ff5cf380db837e0ded",
+        "status" : "passed",
         "time" : {
-          "start" : 1590488883831,
-          "stop" : 1590488891561,
-          "duration" : 7730
+          "start" : 1590500625935,
+          "stop" : 1590500633968,
+          "duration" : 8033
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "363b3dcf2309658fff7c0f7043ab197c"
+      "uid" : "cacc8bf0cfbad7ff5cf380db837e0ded"
     } ],
-    "uid" : "364c08e971958ee45e5acaf71c195702"
+    "uid" : "ee9a0b03bf3c2b50aec9ec4813ea4ffd"
   } ]
 }

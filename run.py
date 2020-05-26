@@ -69,8 +69,6 @@ def run_all_case(browser):
 
 # 多线程+分布式执行selenium代码
 def multi_threading_execute(node_count, host_path, browser_version):
-    # 创建线程锁
-    thread_lock.acquire()
     current_dir = os.path.dirname(__file__)
     config_path = os.path.join(current_dir, "Conf", "config.yaml")
     local_driver_conf = PubMethod.read_yaml(config_path)
@@ -82,9 +80,9 @@ def multi_threading_execute(node_count, host_path, browser_version):
     with open(config_path, 'w', encoding="utf-8") as fw:
         yaml.dump(local_driver_conf, fw, encoding="utf-8")
         fw.close()
-
     run_all_case(browser_version)
-    thread_lock.release()
+
+
 
 
 def execute_selenium_cmd():
@@ -102,19 +100,18 @@ def execute_selenium_cmd():
 
 
 if __name__ == "__main__":
-    # run_all_case()
-    # execute_selenium_cmd()
-    current_dir = os.path.dirname(__file__)
-    config_path = os.path.join(current_dir, "Conf", "config.yaml")
-    local_distributed_config = PubMethod.read_yaml(config_path)
-    distributed_config_dic = local_distributed_config["local_distributed_config"]
-    # 创建线程池
-    threads = []
-    # 创建线程锁
-    thread_lock = threading.Lock()
-    for node, node_info in distributed_config_dic.items():
-        th = threading.Thread(target=multi_threading_execute, args=(node, node_info["host"], node_info["browser"]))
-        th.start()
-        threads.append(th)
-    for th in threads:
-        th.join()
+    input_browser = sys.argv
+
+    try:
+        if input_browser[1] == "chrome":
+            run_all_case("chrome")
+        elif input_browser[1] == "firefox":
+            run_all_case("firefox")
+        elif input_browser[1] == "ie":
+            run_all_case("internet explorer")
+        else:
+            print("参数错误，请重新输入！！！")
+    except Exception as e:
+        print("命令行传参错误信息：{}".format(e))
+
+

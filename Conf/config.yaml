@@ -4,10 +4,13 @@ allure_environment:
   username: luozw@inhand.com.cn
   version: V0.12.0
 local_distributed_config:
-  node2:
+  node1:
     browser: firefox
     host: http://127.0.0.1:4444/wd/hub
+  node2:
+    browser: chrome
+    host: http://127.0.0.1:4444/wd/hub
 local_driver_conf:
-  browser: firefox
+  browser: chrome
   host: http://127.0.0.1:4444/wd/hub
   node: node2
