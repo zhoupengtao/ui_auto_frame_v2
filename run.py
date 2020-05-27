@@ -14,7 +14,8 @@ import threading
 from Common.publicMethod import PubMethod
 from selenium.webdriver import Remote
 
-
+root_dir = os.path.dirname(__file__)
+config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
 
 
 def modify_report_environment_file(report_widgets_dir):
@@ -52,7 +53,7 @@ def run_all_case(browser):
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
-    cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser, browser)
+    cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser.replace(" ", "_"), browser.replace(" ", "_"))
     print("cmd:{}".format(cmd))
     try:
         os.system(cmd)
@@ -62,8 +63,8 @@ def run_all_case(browser):
     # 定义allure报告环境信息
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
-    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1], browser)
-    print("输出项目跟目录{}".format(root_dir))
+    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1], browser.replace(" ", "_"))
+    print("输出项目跟目录{}".format(root_dir.split('/')[-1]))
     print(url)
 
 
@@ -84,20 +85,25 @@ def execute_selenium_cmd():
         print("输出异常项：{}".format(e))
 
 
-if __name__ == "__main__":
-    root_dir = os.path.dirname(__file__)
-    config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
+# test cmd dir_path
+def receive_cmd_arg():
+    global root_dir
     input_browser = sys.argv
-    print(len(input_browser))
     print(input_browser)
-    print(input_browser[1])
     if len(input_browser) > 1:
         try:
             if input_browser[1] == "chrome":
+                root_dir.replace("\\", "/")
+                root_dir = root_dir.replace("\\", "/")
                 run_all_case("chrome")
             elif input_browser[1] == "firefox":
+                print("进入firefox浏览器测试")
+                root_dir = root_dir.replace("\\", "/")
+                print("输出firefox_root_dir:{}".format(root_dir.replace("\\", "/")))
                 run_all_case("firefox")
             elif input_browser[1] == "ie":
+                root_dir.replace("\\", "/")
+                root_dir = root_dir.replace("\\", "/")
                 run_all_case("internet explorer")
             else:
                 print("参数错误，请重新输入！！！")
@@ -105,3 +111,7 @@ if __name__ == "__main__":
             print("命令行传参错误信息：{}".format(e))
     else:
         run_all_case("chrome")
+
+
+if __name__ == "__main__":
+    receive_cmd_arg()

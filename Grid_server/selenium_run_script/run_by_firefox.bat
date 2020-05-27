@@ -1,4 +1,4 @@
 cd ..
 cd ..
-python run.py firefox
+python main.py firefox
 pause
