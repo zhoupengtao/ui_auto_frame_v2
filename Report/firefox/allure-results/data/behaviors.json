@@ -7,25 +7,13 @@
       "name" : "Login",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "56ed05a2a0e7e3bf",
+        "uid" : "89ebdb347c6d7f7a",
         "parentUid" : "d30e595f4cf1cc34bc5d317b7efb522e",
         "status" : "passed",
         "time" : {
-          "start" : 1590500611856,
-          "stop" : 1590500616281,
-          "duration" : 4425
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test",
-        "uid" : "f8cb18b4aab21aca",
-        "parentUid" : "d30e595f4cf1cc34bc5d317b7efb522e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1590500625935,
-          "stop" : 1590500633968,
-          "duration" : 8033
+          "start" : 1590560049321,
+          "stop" : 1590560053363,
+          "duration" : 4042
         },
         "flaky" : false,
         "parameters" : [ ]

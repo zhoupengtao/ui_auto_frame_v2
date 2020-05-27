@@ -121,6 +121,7 @@ class PubMethod:
         @param file:
         @return:
         """
+        print("开始文件读取")
         if os.path.isfile(file):
             fr = open(file, 'r', encoding='utf-8')
             yaml_info = yaml.safe_load(fr)

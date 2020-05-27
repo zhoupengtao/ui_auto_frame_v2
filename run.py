@@ -14,8 +14,7 @@ import threading
 from Common.publicMethod import PubMethod
 from selenium.webdriver import Remote
 
-root_dir = os.path.dirname(__file__)
-config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
+
 
 
 def modify_report_environment_file(report_widgets_dir):
@@ -47,7 +46,7 @@ def run_all_case(browser):
     allure_stories = ["--allure-stories"]
     allure_stories_args = ['']
     allure_path_args = ['--alluredir', report_dir, '--clean-alluredir']
-    test_args = ['-s', '-q']
+    test_args = ['-s', '-q', '--browser={}'.format(browser)]
     # 拼接运行参数
     run_args = test_args + allure_path_args + allure_features + allure_features_list + allure_stories + allure_stories_args
     # 使用pytest.main
@@ -64,25 +63,8 @@ def run_all_case(browser):
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
     url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1], browser)
+    print("输出项目跟目录{}".format(root_dir))
     print(url)
-
-
-# 多线程+分布式执行selenium代码
-def multi_threading_execute(node_count, host_path, browser_version):
-    current_dir = os.path.dirname(__file__)
-    config_path = os.path.join(current_dir, "Conf", "config.yaml")
-    local_driver_conf = PubMethod.read_yaml(config_path)
-    local_driver_dir = local_driver_conf["local_driver_conf"]
-    local_driver_dir["node"] = node_count
-    local_driver_dir["host"] = host_path
-    local_driver_dir["browser"] = browser_version
-    print(local_driver_conf)
-    with open(config_path, 'w', encoding="utf-8") as fw:
-        yaml.dump(local_driver_conf, fw, encoding="utf-8")
-        fw.close()
-    run_all_case(browser_version)
-
-
 
 
 def execute_selenium_cmd():
@@ -92,26 +74,34 @@ def execute_selenium_cmd():
         res = os.system('java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role hub')
         print(res)
         # 启动node节点,注册到hub节点，启动三个节点，适配三种浏览器，节点和浏览器的对应关系通过driver的remote的远程调用来进行，指定IP和browser
-        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register")
-        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5556 -hub http://localhost:4444/grid/register")
-        os.system("java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5557 -hub http://localhost:4444/grid/register")
+        os.system(
+            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register")
+        os.system(
+            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5556 -hub http://localhost:4444/grid/register")
+        os.system(
+            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5557 -hub http://localhost:4444/grid/register")
     except Exception as e:
         print("输出异常项：{}".format(e))
 
 
 if __name__ == "__main__":
+    root_dir = os.path.dirname(__file__)
+    config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
     input_browser = sys.argv
-
-    try:
-        if input_browser[1] == "chrome":
-            run_all_case("chrome")
-        elif input_browser[1] == "firefox":
-            run_all_case("firefox")
-        elif input_browser[1] == "ie":
-            run_all_case("internet explorer")
-        else:
-            print("参数错误，请重新输入！！！")
-    except Exception as e:
-        print("命令行传参错误信息：{}".format(e))
-
-
+    print(len(input_browser))
+    print(input_browser)
+    print(input_browser[1])
+    if len(input_browser) > 1:
+        try:
+            if input_browser[1] == "chrome":
+                run_all_case("chrome")
+            elif input_browser[1] == "firefox":
+                run_all_case("firefox")
+            elif input_browser[1] == "ie":
+                run_all_case("internet explorer")
+            else:
+                print("参数错误，请重新输入！！！")
+        except Exception as e:
+            print("命令行传参错误信息：{}".format(e))
+    else:
+        run_all_case("chrome")

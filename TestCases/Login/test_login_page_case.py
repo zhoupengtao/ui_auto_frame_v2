@@ -40,14 +40,14 @@ class Test_Login_page_case:
         # self.assertEqual(login_btn_text, "登录")
         # self.assertEqual(register_btn_text, "注册")
 
-    @allure.story("Login")
-    @allure.severity("normal")
-    @allure.title("test")
-    def test_DLZC2(self, login_page_class_load):
-        login_page_class_load.login_by_config_url()
-        login_page_class_load.click_reset_btn()
-        reset_title = login_page_class_load.get_reset_page_title()
-        assert reset_title == "找回密码"
+    # @allure.story("Login")
+    # @allure.severity("normal")
+    # @allure.title("test")
+    # def test_DLZC2(self, login_page_class_load):
+    #     login_page_class_load.login_by_config_url()
+    #     login_page_class_load.click_reset_btn()
+    #     reset_title = login_page_class_load.get_reset_page_title()
+    #     assert reset_title == "找回密码"
     #
     # def test_DLZC3(self):
     #     self.login_page.login_by_config_url()
