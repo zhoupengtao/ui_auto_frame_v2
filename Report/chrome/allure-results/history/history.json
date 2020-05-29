@@ -1,0 +1,175 @@
+{
+  "36f9ee1ca987b356ebe13f56a6fa6654" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "649ec57228a3997c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'",
+      "time" : {
+        "start" : 1590746280290,
+        "stop" : 1590746289622,
+        "duration" : 9332
+      }
+    } ]
+  },
+  "259b668c74117c9c98e6dd77480feb7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e46c95d05fc4d68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746227794,
+        "stop" : 1590746234832,
+        "duration" : 7038
+      }
+    } ]
+  },
+  "9828b63065c57a73b445689bdb334357" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1c9c17012b76507",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746265522,
+        "stop" : 1590746276867,
+        "duration" : 11345
+      }
+    } ]
+  },
+  "f29699b788a74b6e236a15253e9b9a81" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d6982ea722449e8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746206788,
+        "stop" : 1590746213844,
+        "duration" : 7056
+      }
+    } ]
+  },
+  "10f82a7b84a53c86f7f8413d42f1ce82" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "157fcf5b5749d5fc",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'",
+      "time" : {
+        "start" : 1590746293002,
+        "stop" : 1590746302342,
+        "duration" : 9340
+      }
+    } ]
+  },
+  "2ee6f3afe8a858fb1aad40072b576f1b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74174b9acd3fdcfe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746238233,
+        "stop" : 1590746247346,
+        "duration" : 9113
+      }
+    } ]
+  },
+  "af7f1dfb1550e07dba7bf9704e317baa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "86a93736cfe9babf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746217322,
+        "stop" : 1590746224377,
+        "duration" : 7055
+      }
+    } ]
+  },
+  "4d5309311eab24ce8ccd96fe23b361db" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a52fe43b43b97c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746250725,
+        "stop" : 1590746261966,
+        "duration" : 11241
+      }
+    } ]
+  },
+  "2e70d922d75bb86f500f24f6fcdf8f27" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da01e7f2fd98ff8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746198090,
+        "stop" : 1590746203374,
+        "duration" : 5284
+      }
+    } ]
+  }
+}

@@ -1,0 +1,12 @@
+17:57:33 INFO 正在定位元素信息：定位方式->name,value值->Username
+17:57:35 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="38891389f869038543af776f1592b912", element="028a6dd5-b542-4a97-9321-88d68bdd7e7e")>
+17:57:35 INFO 元素对象输入值成功，值为：1
+17:57:35 INFO 正在定位元素信息：定位方式->name,value值->Password
+17:57:37 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="38891389f869038543af776f1592b912", element="bdae9839-8d5a-4fad-a0b9-0c9b54819ec3")>
+17:57:37 INFO 元素对象输入值成功，值为：1
+17:57:37 INFO 正在定位元素信息：定位方式->class name,value值->LoginBtn
+17:57:39 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="38891389f869038543af776f1592b912", element="2cb510cf-6acf-4488-b920-6bf111f51dd0")>
+17:57:39 INFO 元素对象点击成功
+17:57:39 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
+17:57:41 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="38891389f869038543af776f1592b912", element="27dfc384-c0ab-482d-b7c5-514bcb29c5fa")>
+17:57:41 INFO 元素text值：账号不存在

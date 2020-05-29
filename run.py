@@ -8,11 +8,8 @@ import os
 import sys
 import json
 import yaml
-import time
 import pytest
-import threading
 from Common.publicMethod import PubMethod
-from selenium.webdriver import Remote
 
 root_dir = os.path.dirname(__file__)
 config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
@@ -53,7 +50,8 @@ def run_all_case(browser):
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
-    cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser.replace(" ", "_"), browser.replace(" ", "_"))
+    cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser.replace(" ", "_"),
+                                                                                     browser.replace(" ", "_"))
     print("cmd:{}".format(cmd))
     try:
         os.system(cmd)
@@ -63,9 +61,17 @@ def run_all_case(browser):
     # 定义allure报告环境信息
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
-    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1], browser.replace(" ", "_"))
+    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1],
+                                                                                      browser.replace(" ", "_"))
     print("输出项目跟目录{}".format(root_dir.split('/')[-1]))
     print(url)
+
+
+# 创建四个selenium-docker容器
+def create_node():
+    PubMethod.create_docker_hub_container("tcp://10.5.16.224:2375", "selenium/hub", "hub", {"4444/tcp": "4444"})
+    PubMethod.create_docker_node_container("tcp://10.5.16.224:2375", "selenium/node-firefox", "selenium_firefox", {"5555/tcp": "5555"}, {"hub": "hub"})
+    PubMethod.create_docker_node_container("tcp://10.5.16.224:2375", "selenium/node-chrome", "selenium_chrome", {"5556/tcp": "5556"}, {"hub": "hub"})
 
 
 def execute_selenium_cmd():
@@ -85,7 +91,7 @@ def execute_selenium_cmd():
         print("输出异常项：{}".format(e))
 
 
-# test cmd dir_path
+# 命令行参数调用
 def receive_cmd_arg():
     global root_dir
     input_browser = sys.argv

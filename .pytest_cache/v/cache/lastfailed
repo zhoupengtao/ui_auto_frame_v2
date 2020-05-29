@@ -1,1 +1,4 @@
-{}
+{
+  "TestCases/Login/test_login_page_case.py::Test_Login_page_case::test_DLZC8": true,
+  "TestCases/Login/test_login_page_case.py::Test_Login_page_case::test_DLZC9": true
+}

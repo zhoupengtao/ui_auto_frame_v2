@@ -4,16 +4,17 @@ import string
 import sys
 import yaml
 import os
-from datetime import datetime, timedelta
 import math
-from hashlib import md5
-from IPy import IP
-from Common.file_option import File_option
 import time
+import docker
 import requests
 import xeger
 import qrcode
 import xlrd
+from IPy import IP
+from hashlib import md5
+from Common.file_option import File_option
+from datetime import datetime, timedelta
 
 
 class PubMethod:
@@ -256,3 +257,38 @@ class PubMethod:
             print(e)
         finally:
             return picture_url
+
+    @staticmethod
+    def create_docker_hub_container(base_url, image, name, ports):
+        client = docker.DockerClient(base_url=base_url)
+        try:
+            client.containers.run(
+                image=image,
+                detach=True,
+                tty=True,
+                stdin_open=True,
+                restart_policy={'Name': 'always'},
+                name=name,
+                ports=ports,
+                privileged=True
+            )
+        except Exception as e:
+            print("创建容器失败，错误信息：{}".format(e))
+
+    @staticmethod
+    def create_docker_node_container(base_url, image, name, ports, links):
+        client = docker.DockerClient(base_url=base_url)
+        try:
+            client.containers.run(
+                image=image,
+                detach=True,
+                tty=True,
+                stdin_open=True,
+                restart_policy={'Name': 'always'},
+                name=name,
+                ports=ports,
+                links=links,
+                privileged=True
+            )
+        except Exception as e:
+            print("创建容器失败，错误信息：{}".format(e))

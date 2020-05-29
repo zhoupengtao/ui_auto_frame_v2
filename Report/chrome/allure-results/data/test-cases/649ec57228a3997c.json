@@ -1,0 +1,163 @@
+{
+  "uid" : "649ec57228a3997c",
+  "name" : "test",
+  "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC8",
+  "historyId" : "36f9ee1ca987b356ebe13f56a6fa6654",
+  "time" : {
+    "start" : 1590746280290,
+    "stop" : 1590746289622,
+    "duration" : 9332
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'",
+  "statusTrace" : "self = <TestCases.Login.test_login_page_case.Test_Login_page_case object at 0x000001C28C37D8B0>\nlogin_page_class_load = <PageObject.login_page.Login_page object at 0x000001C28C34BD60>\n\n    @allure.story(\"Login\")\n    @allure.severity(\"normal\")\n    @allure.title(\"test\")\n    def test_DLZC8(self, login_page_class_load):\n        login_page_class_load.login_by_config_url()\n        login_page_class_load.username_send_keys(\"13199044512\")\n        login_page_class_load.password_send_keys(\"123\")\n        login_page_class_load.click_login_btn()\n>       btn_buy_text = self.buy_page.find_button_buy()\nE       AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'\n\nTestCases\\Login\\test_login_page_case.py:102: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "session_remote_driver",
+    "time" : {
+      "start" : 1590746277010,
+      "stop" : 1590746280288,
+      "duration" : 3278
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_page_class_load",
+    "time" : {
+      "start" : 1590746280289,
+      "stop" : 1590746280289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1590746277009,
+      "stop" : 1590746277009,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'",
+    "statusTrace" : "self = <TestCases.Login.test_login_page_case.Test_Login_page_case object at 0x000001C28C37D8B0>\nlogin_page_class_load = <PageObject.login_page.Login_page object at 0x000001C28C34BD60>\n\n    @allure.story(\"Login\")\n    @allure.severity(\"normal\")\n    @allure.title(\"test\")\n    def test_DLZC8(self, login_page_class_load):\n        login_page_class_load.login_by_config_url()\n        login_page_class_load.username_send_keys(\"13199044512\")\n        login_page_class_load.password_send_keys(\"123\")\n        login_page_class_load.click_login_btn()\n>       btn_buy_text = self.buy_page.find_button_buy()\nE       AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'\n\nTestCases\\Login\\test_login_page_case.py:102: AttributeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b1da798b7a5ab259",
+      "name" : "log",
+      "source" : "b1da798b7a5ab259.txt",
+      "type" : "text/plain",
+      "size" : 928
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "session_remote_driver::0",
+    "time" : {
+      "start" : 1590746289630,
+      "stop" : 1590746289708,
+      "duration" : 78
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_page_class_load::0",
+    "time" : {
+      "start" : 1590746289629,
+      "stop" : 1590746289629,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Login_page_case"
+  }, {
+    "name" : "story",
+    "value" : "Login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.Login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_page_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login_page_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NTLLTVC"
+  }, {
+    "name" : "thread",
+    "value" : "15652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.Login.test_login_page_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "649ec57228a3997c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,166 @@
+{
+  "uid" : "da01e7f2fd98ff8e",
+  "name" : "执行测试用例用于登录模块",
+  "fullName" : "TestCases.Login.test_login_page_case.Test_Login_page_case#test_DLZC1",
+  "historyId" : "2e70d922d75bb86f500f24f6fcdf8f27",
+  "time" : {
+    "start" : 1590746198090,
+    "stop" : 1590746203374,
+    "duration" : 5284
+  },
+  "description" : "测试登录",
+  "descriptionHtml" : "<p>测试登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1590746194292,
+      "stop" : 1590746194292,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "session_remote_driver",
+    "time" : {
+      "start" : 1590746194292,
+      "stop" : 1590746198088,
+      "duration" : 3796
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_page_class_load",
+    "time" : {
+      "start" : 1590746198088,
+      "stop" : 1590746198088,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "测试登录",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6136ef6467a87154",
+      "name" : "log",
+      "source" : "6136ef6467a87154.txt",
+      "type" : "text/plain",
+      "size" : 394
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "session_remote_driver::0",
+    "time" : {
+      "start" : 1590746203378,
+      "stop" : 1590746203500,
+      "duration" : 122
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "login_page_class_load::0",
+    "time" : {
+      "start" : 1590746203375,
+      "stop" : 1590746203376,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Login_page_case"
+  }, {
+    "name" : "story",
+    "value" : "Login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.Login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_page_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Login_page_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NTLLTVC"
+  }, {
+    "name" : "thread",
+    "value" : "15652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.Login.test_login_page_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "测试用例位置",
+    "url" : "https://www.sina.com",
+    "type" : "test_case"
+  }, {
+    "name" : "连接跳转百度",
+    "url" : "https://www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da01e7f2fd98ff8e.json",
+  "parameterValues" : [ ]
+}

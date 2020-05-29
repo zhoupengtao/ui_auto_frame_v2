@@ -27,17 +27,6 @@ from selenium.webdriver.chrome.options import Options
 #     driver.quit()
 
 
-@pytest.fixture(scope="function")
-def session_remote_driver(request):
-    browser = request.config.getoption("--browser")
-    print("获取命令行传参：{}".format(request.config.getoption("--browser")))
-    driver = Remote(command_executor="http://127.0.0.1:4444/wd/hub",
-                    desired_capabilities={'platform': 'ANY', 'browserName': browser, 'version': '',
-                                          'javascriptEnabled': True})
-    yield driver
-    #driver.close()
-    driver.quit()
-
 
 @pytest.fixture(scope="function")
 def login_page_class_load(session_remote_driver):

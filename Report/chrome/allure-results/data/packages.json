@@ -1,0 +1,117 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCases.Login.test_login_page_case",
+    "children" : [ {
+      "name" : "执行测试用例用于登录模块",
+      "uid" : "da01e7f2fd98ff8e",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746198090,
+        "stop" : 1590746203374,
+        "duration" : 5284
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "d6982ea722449e8e",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746206788,
+        "stop" : 1590746213844,
+        "duration" : 7056
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "86a93736cfe9babf",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746217322,
+        "stop" : 1590746224377,
+        "duration" : 7055
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "6e46c95d05fc4d68",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746227794,
+        "stop" : 1590746234832,
+        "duration" : 7038
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "74174b9acd3fdcfe",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746238233,
+        "stop" : 1590746247346,
+        "duration" : 9113
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "9a52fe43b43b97c2",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746250725,
+        "stop" : 1590746261966,
+        "duration" : 11241
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "e1c9c17012b76507",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "passed",
+      "time" : {
+        "start" : 1590746265522,
+        "stop" : 1590746276867,
+        "duration" : 11345
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "649ec57228a3997c",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "broken",
+      "time" : {
+        "start" : 1590746280290,
+        "stop" : 1590746289622,
+        "duration" : 9332
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test",
+      "uid" : "157fcf5b5749d5fc",
+      "parentUid" : "a81dd6dfebd6fe0cf770cb496b717846",
+      "status" : "broken",
+      "time" : {
+        "start" : 1590746293002,
+        "stop" : 1590746302342,
+        "duration" : 9340
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "TestCases.Login.test_login_page_case"
+  } ]
+}

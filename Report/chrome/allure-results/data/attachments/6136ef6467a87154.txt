@@ -1,0 +1,4 @@
+17:56:38 INFO 用例编号编码：test_DLZC1
+17:56:41 INFO 正在定位元素信息：定位方式->name,value值->Username
+17:56:43 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="a86db0551592e9e613e44005b3899403", element="d6fd83b6-06df-42fa-8b48-e71419e18738")>
+17:56:43 INFO 该元素对象获取placeholder成功，placeholder值为：邮箱/手机号码

@@ -1,0 +1,6 @@
+17:57:00 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+17:57:02 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4eafbde886547c5251f500f9d6e56500", element="f3b13da4-afb3-409b-b612-8763d316d94a")>
+17:57:02 INFO 元素对象点击成功
+17:57:02 INFO 正在定位元素信息：定位方式->class name,value值->InputTitleText
+17:57:04 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4eafbde886547c5251f500f9d6e56500", element="01b6d5f0-6e12-4a9e-9a34-498d52df4103")>
+17:57:04 INFO 元素text值：注册

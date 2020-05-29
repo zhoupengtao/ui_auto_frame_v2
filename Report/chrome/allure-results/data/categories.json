@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'Test_Login_page_case' object has no attribute 'buy_page'",
+      "children" : [ {
+        "name" : "test",
+        "uid" : "649ec57228a3997c",
+        "parentUid" : "57b13bd2c5815a4d604bc19f4ce87794",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590746280290,
+          "stop" : 1590746289622,
+          "duration" : 9332
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test",
+        "uid" : "157fcf5b5749d5fc",
+        "parentUid" : "57b13bd2c5815a4d604bc19f4ce87794",
+        "status" : "broken",
+        "time" : {
+          "start" : 1590746293002,
+          "stop" : 1590746302342,
+          "duration" : 9340
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57b13bd2c5815a4d604bc19f4ce87794"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

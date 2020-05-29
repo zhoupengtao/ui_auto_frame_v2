@@ -1,32 +1,10 @@
 # coding:utf-8
-import unittest
-from selenium import webdriver
-from PageObject.login_page import Login_page
-from PageObject.buy_page import Buy_page
-from PageObject.register_page import Register_page
-from Common.log_option import log,log_INFO,log_ERROR,log_DEBUG,log_WARNING
+import pytest
 
 
-class Register_page_case(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        log_WARNING("类前执行一次")
 
-    @classmethod
-    def tearDownClass(cls):
-        log_WARNING("类后执行一次")
+class Register_page_case():
 
-    def setUp(self):
-        log_WARNING("开始执行case")
-        self.driver = webdriver.Chrome()
-        self.login_page = Login_page(self.driver)
-        self.buy_page = Buy_page(self.driver)
-        self.register_page = Register_page(self.driver)
-
-    def tearDown(self):
-        self.driver.close()
-        self.driver.quit()
-        log_WARNING("结束执行case")
 
     def test_DLZC10(self):
         self.login_page.login_by_config_url()
