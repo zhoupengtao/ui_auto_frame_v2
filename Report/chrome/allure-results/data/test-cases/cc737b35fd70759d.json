@@ -1,0 +1,155 @@
+{
+  "uid" : "cc737b35fd70759d",
+  "name" : "test",
+  "fullName" : "TestCases.Login.test_login_page_case.Test_login_page_case#test_DLZC2",
+  "historyId" : "14ba8c9362e6e3cd3626eb9273e5a000",
+  "time" : {
+    "start" : 1591005351533,
+    "stop" : 1591005358753,
+    "duration" : 7220
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "login_page_class_load",
+    "time" : {
+      "start" : 1591005351531,
+      "stop" : 1591005351531,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1591005348258,
+      "stop" : 1591005348258,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_driver",
+    "time" : {
+      "start" : 1591005348259,
+      "stop" : 1591005351531,
+      "duration" : 3272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d33db530c87733fd",
+      "name" : "log",
+      "source" : "d33db530c87733fd.txt",
+      "type" : "text/plain",
+      "size" : 711
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login_page_class_load::0",
+    "time" : {
+      "start" : 1591005358753,
+      "stop" : 1591005358753,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_driver::0",
+    "time" : {
+      "start" : 1591005358754,
+      "stop" : 1591005360920,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login_page_case"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.Login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_page_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login_page_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NTLLTVC"
+  }, {
+    "name" : "thread",
+    "value" : "1128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.Login.test_login_page_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc737b35fd70759d.json",
+  "parameterValues" : [ ]
+}

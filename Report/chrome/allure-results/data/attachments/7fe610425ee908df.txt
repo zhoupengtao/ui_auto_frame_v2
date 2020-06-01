@@ -1,9 +1,0 @@
-17:57:21 INFO 正在定位元素信息：定位方式->name,value值->Username
-17:57:23 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="68ceb3ddd3b27db1a0c6003ccabcb33e", element="5701e0c9-52e8-40ab-ad68-cf8b16e11a5e")>
-17:57:23 INFO 元素对象输入值成功，值为：1
-17:57:23 INFO 正在定位元素信息：定位方式->class name,value值->LoginBtn
-17:57:25 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="68ceb3ddd3b27db1a0c6003ccabcb33e", element="12f8f315-a4cd-4251-bb47-d213f11ab36f")>
-17:57:25 INFO 元素对象点击成功
-17:57:25 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
-17:57:27 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="68ceb3ddd3b27db1a0c6003ccabcb33e", element="5fabefee-27cc-411a-b647-a4cf8ef119c6")>
-17:57:27 INFO 元素text值：密码不能为空

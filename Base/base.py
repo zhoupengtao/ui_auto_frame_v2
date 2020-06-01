@@ -6,10 +6,13 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import os
 import logging
 from Common.config_option import Config_option
+from Common.publicMethod import PubMethod
 
-
+#conf_path = os.path.join(os.path.dirname(__file__).rsplit("/", 2)[0], "Conf", "config.yaml")
+conf_path = os.path.abspath("./Conf/config.yaml")
 # Base层封装的是元素的操作方法
 class Base:
     def __init__(self, driver):
@@ -34,7 +37,9 @@ class Base:
 
         @return: 配置文件URL
         """
-        return self.config.config_url()
+        config_info = PubMethod.read_yaml(conf_path)
+        print("config_info地址：{}".format(config_info))
+        return config_info["test_info"]["test_URL"]
 
     def login_by_config_url(self):
         """
@@ -188,5 +193,6 @@ class Base:
 
 
 if __name__ == "__main__":
-    base = Base(webdriver.Chrome())
-    base.login_by_config_url()
+    print(conf_path)
+    config_info = PubMethod.read_yaml(conf_path)
+    print(config_info["test_info"])

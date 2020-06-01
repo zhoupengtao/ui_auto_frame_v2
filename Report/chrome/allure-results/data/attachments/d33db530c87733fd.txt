@@ -1,0 +1,7 @@
+17:55:54 INFO 正在定位元素信息：定位方式->class name,value值->GoResetPassword
+17:55:56 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4602881bb93229d2762082177d54cb51", element="576933a5-c9d2-4bba-8f24-8291a7348258")>
+17:55:56 INFO 元素对象点击成功
+17:55:56 INFO 正在定位元素信息：定位方式->class name,value值->InputTitleText
+17:55:58 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4602881bb93229d2762082177d54cb51", element="8f396a47-42aa-4d76-9af0-c979c31566ae")>
+17:55:58 INFO 元素text值：找回密码
+17:55:58 INFO 正在进行元素断言：断言方式->找回密码：是否等于->找回密码

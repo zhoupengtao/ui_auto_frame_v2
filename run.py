@@ -1,3 +1,4 @@
+# !/user/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2020/5/12 21:11
 # @Author  : chineseluo
@@ -38,13 +39,13 @@ def run_all_case(browser):
     # 定义测试用例集合
     # 定义features集合
     allure_features = ["--allure-features"]
-    allure_features_list = ["Login_page_case"]
+    allure_features_list = ["Login_page_case, Register_page_case"]
     allure_features_args = ",".join(allure_features_list)
     # 定义stories集合
     allure_stories = ["--allure-stories"]
     allure_stories_args = ['']
     allure_path_args = ['--alluredir', report_dir, '--clean-alluredir']
-    test_args = ['-s', '-q', '--browser={}'.format(browser)]
+    test_args = ['-s', '-q', '--browser={}'.format(browser), '--browser_opt={}'.format("open")]
     # 拼接运行参数
     run_args = test_args + allure_path_args + allure_features + allure_features_list + allure_stories + allure_stories_args
     # 使用pytest.main
@@ -65,30 +66,6 @@ def run_all_case(browser):
                                                                                       browser.replace(" ", "_"))
     print("输出项目跟目录{}".format(root_dir.split('/')[-1]))
     print(url)
-
-
-# 创建四个selenium-docker容器
-def create_node():
-    PubMethod.create_docker_hub_container("tcp://10.5.16.224:2375", "selenium/hub", "hub", {"4444/tcp": "4444"})
-    PubMethod.create_docker_node_container("tcp://10.5.16.224:2375", "selenium/node-firefox", "selenium_firefox", {"5555/tcp": "5555"}, {"hub": "hub"})
-    PubMethod.create_docker_node_container("tcp://10.5.16.224:2375", "selenium/node-chrome", "selenium_chrome", {"5556/tcp": "5556"}, {"hub": "hub"})
-
-
-def execute_selenium_cmd():
-    # 需要启动三个进程，使用多线程
-    try:
-        # 启动hub节点,启动之前需要下载selenium-server-standalone，以及对应的browser的driver
-        res = os.system('java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role hub')
-        print(res)
-        # 启动node节点,注册到hub节点，启动三个节点，适配三种浏览器，节点和浏览器的对应关系通过driver的remote的远程调用来进行，指定IP和browser
-        os.system(
-            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register")
-        os.system(
-            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5556 -hub http://localhost:4444/grid/register")
-        os.system(
-            "java -jar Selenium_server_dir\\selenium-server-standalone-3.141.0.jar -role node -port 5557 -hub http://localhost:4444/grid/register")
-    except Exception as e:
-        print("输出异常项：{}".format(e))
 
 
 # 命令行参数调用

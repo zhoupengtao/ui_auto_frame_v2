@@ -6,11 +6,13 @@ import yaml
 import os
 import math
 import time
+import logging
 import docker
 import requests
 import xeger
 import qrcode
 import xlrd
+import allure
 from IPy import IP
 from hashlib import md5
 from Common.file_option import File_option
@@ -248,13 +250,17 @@ class PubMethod:
         @return:
         """
         try:
+            logging.info("正在进行截图操作：")
             picture_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
             file_path = "Report/picture"
             file_name = picture_time + ".png"
             File_option.file_mkdir(file_path)
-            picture_url = driver.get_screenshot_as_file(file_path + '/' + file_name)
+            res = driver.get_screenshot_as_file(file_path + '/' + file_name)
+            picture_url = file_path + '/' + file_name
+            allure.attach.file(picture_url, attachment_type=allure.attachment_type.PNG)
+            logging.info("截图成功，picture_url为：{}".format(picture_url))
         except Exception as e:
-            print(e)
+            logging.error("截图失败，错误信息为：{}".format(e))
         finally:
             return picture_url
 
