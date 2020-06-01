@@ -1,8 +1,0 @@
-17:55:40 INFO 用例编号编码：test_DLZC1
-17:55:43 INFO 正在定位元素信息：定位方式->name,value值->Username
-17:55:45 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="0e1583949079a7c8ed0d8e91049dca70", element="0452edf5-6575-43ed-acfa-5f2ae9d3e7b3")>
-17:55:45 INFO 该元素对象获取placeholder成功，placeholder值为：邮箱/手机号码
-17:55:45 INFO 正在进行元素断言：断言方式->邮箱/手机号码：是否等于->手机号码
-17:55:45 ERROR 断言执行失败，错误信息为：
-17:55:45 INFO 正在进行截图操作：
-17:55:45 INFO 截图成功，picture_url为：Report/picture/2020-06-01-17_55_45.png

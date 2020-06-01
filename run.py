@@ -8,7 +8,7 @@
 import os
 import sys
 import json
-import yaml
+import logging
 import pytest
 from Common.publicMethod import PubMethod
 
@@ -39,7 +39,10 @@ def run_all_case(browser):
     # 定义测试用例集合
     # 定义features集合
     allure_features = ["--allure-features"]
-    allure_features_list = ["Login_page_case, Register_page_case"]
+    allure_features_list = [
+        'Register_page_case',
+         'Login_page_case'
+    ]
     allure_features_args = ",".join(allure_features_list)
     # 定义stories集合
     allure_stories = ["--allure-stories"]
@@ -47,32 +50,31 @@ def run_all_case(browser):
     allure_path_args = ['--alluredir', report_dir, '--clean-alluredir']
     test_args = ['-s', '-q', '--browser={}'.format(browser), '--browser_opt={}'.format("open")]
     # 拼接运行参数
-    run_args = test_args + allure_path_args + allure_features + allure_features_list + allure_stories + allure_stories_args
+    run_args = test_args + allure_path_args + allure_features + [allure_features_args] + allure_stories + allure_stories_args
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
     cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(browser.replace(" ", "_"),
                                                                                      browser.replace(" ", "_"))
-    print("cmd:{}".format(cmd))
+    logging.info("命令行执行cmd:{}".format(cmd))
     try:
         os.system(cmd)
     except Exception as e:
-        print('命令【{}】执行失败！'.format(cmd))
+        logging.error('命令【{}】执行失败！'.format(cmd))
         sys.exit()
     # 定义allure报告环境信息
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
     url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1],
                                                                                       browser.replace(" ", "_"))
-    print("输出项目跟目录{}".format(root_dir.split('/')[-1]))
-    print(url)
+    logging.info("输出项目跟目录{}".format(root_dir.split('/')[-1]))
+    logging.info(url)
 
 
 # 命令行参数调用
 def receive_cmd_arg():
     global root_dir
     input_browser = sys.argv
-    print(input_browser)
     if len(input_browser) > 1:
         try:
             if input_browser[1] == "chrome":
@@ -80,18 +82,16 @@ def receive_cmd_arg():
                 root_dir = root_dir.replace("\\", "/")
                 run_all_case("chrome")
             elif input_browser[1] == "firefox":
-                print("进入firefox浏览器测试")
                 root_dir = root_dir.replace("\\", "/")
-                print("输出firefox_root_dir:{}".format(root_dir.replace("\\", "/")))
                 run_all_case("firefox")
             elif input_browser[1] == "ie":
                 root_dir.replace("\\", "/")
                 root_dir = root_dir.replace("\\", "/")
                 run_all_case("internet explorer")
             else:
-                print("参数错误，请重新输入！！！")
+                logging.error("参数错误，请重新输入！！！")
         except Exception as e:
-            print("命令行传参错误信息：{}".format(e))
+            logging.error("命令行传参错误信息：{}".format(e))
     else:
         run_all_case("chrome")
 

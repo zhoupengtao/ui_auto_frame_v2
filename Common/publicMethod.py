@@ -124,14 +124,13 @@ class PubMethod:
         @param file:
         @return:
         """
-        print("开始文件读取")
         if os.path.isfile(file):
             fr = open(file, 'r', encoding='utf-8')
             yaml_info = yaml.safe_load(fr)
             fr.close()
             return yaml_info
         else:
-            print(file, '文件不存在')
+            logging.error(file, '文件不存在')
             sys.exit()
 
 
@@ -156,7 +155,6 @@ class PubMethod:
         return base_ip
 
     def get_sub_net(self, sub=None):
-        print('erererer')
         if sub == None:
             mask = random.choice([12, 13, 14, 15, 16])
             base_ip = self.get_rand_ip()

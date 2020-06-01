@@ -65,7 +65,7 @@ def function_driver(request):
         else:
             logging.info("发送错误浏览器参数：{}".format(browser))
     yield driver
-    driver.close()
+    # driver.close()
     driver.quit()
 
 

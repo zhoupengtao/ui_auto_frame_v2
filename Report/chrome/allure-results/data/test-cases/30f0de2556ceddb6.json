@@ -1,23 +1,23 @@
 {
-  "uid" : "9e4edc5400e2f90a",
+  "uid" : "30f0de2556ceddb6",
   "name" : "执行测试用例用于登录模块",
-  "fullName" : "TestCases.Login.test_login_page_case.Test_login_page_case#test_DLZC1",
-  "historyId" : "b8ca45f68a87d2deed679c5285a60635",
+  "fullName" : "TestCases.Register.test_register_page_case.Test_register_page_case#test_DLZC7",
+  "historyId" : "3e4ecbf3cfd7bdee7a43ba533581d6be",
   "time" : {
-    "start" : 1591005340488,
-    "stop" : 1591005345997,
-    "duration" : 5509
+    "start" : 1591016101096,
+    "stop" : 1591016109955,
+    "duration" : 8859
   },
   "description" : "测试登录",
   "descriptionHtml" : "<p>测试登录</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ {
-    "name" : "__pytest_repeat_step_number",
+    "name" : "login_page_class_load",
     "time" : {
-      "start" : 1591005337245,
-      "stop" : 1591005337245,
-      "duration" : 0
+      "start" : 1591016101095,
+      "stop" : 1591016101096,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -25,14 +25,14 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   }, {
     "name" : "function_driver",
     "time" : {
-      "start" : 1591005337245,
-      "stop" : 1591005340485,
-      "duration" : 3240
+      "start" : 1591016095737,
+      "stop" : 1591016101095,
+      "duration" : 5358
     },
     "status" : "passed",
     "steps" : [ ],
@@ -40,13 +40,13 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   }, {
-    "name" : "login_page_class_load",
+    "name" : "register_page_class_load",
     "time" : {
-      "start" : 1591005340486,
-      "stop" : 1591005340486,
+      "start" : 1591016101096,
+      "stop" : 1591016101096,
       "duration" : 0
     },
     "status" : "passed",
@@ -55,52 +55,31 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "description" : "测试登录",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "49396c3f51b9044f",
-      "name" : "4c7f3b8e-5fbd-410c-b883-95fcf63f5425-attachment.png",
-      "source" : "49396c3f51b9044f.png",
-      "type" : "image/png",
-      "size" : 46553
-    }, {
-      "uid" : "12fdcb67ba78f933",
+      "uid" : "f744b14d8b976fae",
       "name" : "log",
-      "source" : "12fdcb67ba78f933.txt",
+      "source" : "f744b14d8b976fae.txt",
       "type" : "text/plain",
-      "size" : 680
+      "size" : 742
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 2
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
-    "name" : "function_driver::0",
-    "time" : {
-      "start" : 1591005345999,
-      "stop" : 1591005348243,
-      "duration" : 2244
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
-  }, {
     "name" : "login_page_class_load::0",
     "time" : {
-      "start" : 1591005345998,
-      "stop" : 1591005345998,
+      "start" : 1591016109956,
+      "stop" : 1591016109956,
       "duration" : 0
     },
     "status" : "passed",
@@ -109,33 +88,63 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "function_driver::0",
+    "time" : {
+      "start" : 1591016109957,
+      "stop" : 1591016112044,
+      "duration" : 2087
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "register_page_class_load::0",
+    "time" : {
+      "start" : 1591016109955,
+      "stop" : 1591016109956,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
     "name" : "severity",
     "value" : "normal"
   }, {
     "name" : "story",
-    "value" : "Login"
+    "value" : "Register"
   }, {
     "name" : "feature",
-    "value" : "Login_page_case"
+    "value" : "Register_page_case"
   }, {
     "name" : "parentSuite",
-    "value" : "TestCases.Login"
+    "value" : "TestCases.Register"
   }, {
     "name" : "suite",
-    "value" : "test_login_page_case"
+    "value" : "test_register_page_case"
   }, {
     "name" : "subSuite",
-    "value" : "Test_login_page_case"
+    "value" : "Test_register_page_case"
   }, {
     "name" : "host",
-    "value" : "DESKTOP-NTLLTVC"
+    "value" : "DESKTOP-SM7DO0G"
   }, {
     "name" : "thread",
-    "value" : "1128-MainThread"
+    "value" : "9788-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -144,7 +153,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "TestCases.Login.test_login_page_case"
+    "value" : "TestCases.Register.test_register_page_case"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -167,6 +176,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9e4edc5400e2f90a.json",
+  "source" : "30f0de2556ceddb6.json",
   "parameterValues" : [ ]
 }

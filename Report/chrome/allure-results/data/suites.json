@@ -9,25 +9,13 @@
         "name" : "Test_login_page_case",
         "children" : [ {
           "name" : "执行测试用例用于登录模块",
-          "uid" : "9e4edc5400e2f90a",
+          "uid" : "bf5ecdf8a41ee4ca",
           "parentUid" : "b918285e130f595bd4b93a6fac3959f1",
           "status" : "passed",
           "time" : {
-            "start" : 1591005340488,
-            "stop" : 1591005345997,
-            "duration" : 5509
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "test",
-          "uid" : "cc737b35fd70759d",
-          "parentUid" : "b918285e130f595bd4b93a6fac3959f1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1591005351533,
-            "stop" : 1591005358753,
-            "duration" : 7220
+            "start" : 1591016086299,
+            "stop" : 1591016093626,
+            "duration" : 7327
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -37,5 +25,29 @@
       "uid" : "dcbf3e1bbb99ec79aca8993db78f0089"
     } ],
     "uid" : "92355321ce0c6990cd59ca4955291ae3"
+  }, {
+    "name" : "TestCases.Register",
+    "children" : [ {
+      "name" : "test_register_page_case",
+      "children" : [ {
+        "name" : "Test_register_page_case",
+        "children" : [ {
+          "name" : "执行测试用例用于登录模块",
+          "uid" : "30f0de2556ceddb6",
+          "parentUid" : "9f85030cc2ae9abc5126238cb529ec78",
+          "status" : "passed",
+          "time" : {
+            "start" : 1591016101096,
+            "stop" : 1591016109955,
+            "duration" : 8859
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9f85030cc2ae9abc5126238cb529ec78"
+      } ],
+      "uid" : "f393074bb074e077355d51a750cfa639"
+    } ],
+    "uid" : "95239ad7900649b7adebfd706f69c4ae"
   } ]
 }

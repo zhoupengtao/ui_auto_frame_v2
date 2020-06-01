@@ -1,8 +1,19 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
     "uid" : "6d268c889e9c0e7c87131ad3a250a147",
     "name" : "Login_page_case",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "c290e60be702d74e818aa489e947468d",
+    "name" : "Register_page_case",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

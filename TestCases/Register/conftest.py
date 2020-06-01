@@ -28,5 +28,6 @@ def register_page_class_load(function_driver):
     register_page = Register_page(function_driver)
     yield register_page
 
+
 # if __name__ == '__main__':
 #     session_remote_driver()

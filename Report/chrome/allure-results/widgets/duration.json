@@ -1,20 +1,20 @@
 [ {
-  "uid" : "cc737b35fd70759d",
-  "name" : "test",
+  "uid" : "bf5ecdf8a41ee4ca",
+  "name" : "执行测试用例用于登录模块",
   "time" : {
-    "start" : 1591005351533,
-    "stop" : 1591005358753,
-    "duration" : 7220
+    "start" : 1591016086299,
+    "stop" : 1591016093626,
+    "duration" : 7327
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9e4edc5400e2f90a",
+  "uid" : "30f0de2556ceddb6",
   "name" : "执行测试用例用于登录模块",
   "time" : {
-    "start" : 1591005340488,
-    "stop" : 1591005345997,
-    "duration" : 5509
+    "start" : 1591016101096,
+    "stop" : 1591016109955,
+    "duration" : 8859
   },
   "status" : "passed",
   "severity" : "normal"

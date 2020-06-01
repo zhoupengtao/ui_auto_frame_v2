@@ -1,3 +1,3 @@
-"Status","Name","Duration in ms","Description"
-"passed","TestCases.Login.test_login_page_case.Test_login_page_case#test_DLZC2","7220",""
-"passed","TestCases.Login.test_login_page_case.Test_login_page_case#test_DLZC1","5509","测试登录"
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 01 20:54:46 CST 2020","Mon Jun 01 20:54:53 CST 2020","7327","TestCases.Login","test_login_page_case","Test_login_page_case","","","执行测试用例用于登录模块","测试登录"
+"passed","Mon Jun 01 20:55:01 CST 2020","Mon Jun 01 20:55:09 CST 2020","8859","TestCases.Register","test_register_page_case","Test_register_page_case","","","执行测试用例用于登录模块","测试登录"
