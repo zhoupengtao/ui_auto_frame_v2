@@ -1,170 +1,216 @@
-### ui_auto_frame¿ò¼Ü½âÊÍ:
+### ui_auto_frameæ¡†æ¶è§£é‡Š:
 
-### ¼ò½é
+### ç®€ä»‹
 
-**UI×Ô¶¯»¯²âÊÔ¿ò¼Ü£ºpytest+selenium+allure**
-
----
-
-### Ä£¿éÉè¼Æ
-
-**BaseÄ£¿é·â×°²Ù×÷ÔªËØµÄ¹«¹²·½·¨**
-**Check_config_scriptÄ£¿é´æ·Å»·¾³¼ì²éµÄ½Å±¾**
-**CommonÄ£¿éÊÇ·â×°µÄ¶ÁÈ¡ÅäÖÃÎÄ¼şµÄ¹«¹²·½·¨£¬ÀàËÆÓÚutil¹¤¾ßÀà**
-**ConfÄ£¿éÊÇ´æ·ÅÈ«¾ÖÅäÖÃÎÄ¼ş**
-**Grid_serverÄ£¿é´æ·Åselenium-server£¨hubºÍnode£©Æô¶¯bat½Å±¾£¬ÒÔ¼°ÈıÖÖseleniumÈıÖÖä¯ÀÀÆ÷ÃüÁîĞĞ²ÎÊıµÄÈë¿Ú**
-**LogsÄ£¿é£¬ÓÃÓÚÉú³ÉÈÕÖ¾ÎÄ¼ş**
-**PageObjectÄ£¿éÌáÈ¡Ò³Ãæ¶ÔÏó·â×°¹«¹²²Ù×÷·½·¨**
-**ReportÄ£¿é£¬´æ·Å²âÊÔ±¨¸æ£¬ÒÔ¼°²âÊÔ±¨¸æµÄÉú³ÉÄ£°åallure**
-**TestCasesÄ£¿é£¬ÓÃÓÚ´æ·Å²âÊÔcase**
+**UIè‡ªåŠ¨åŒ–æµ‹è¯•æ¡†æ¶ï¼špytest+selenium+allure**
 
 ---
 
-### allure×°ÊÎÆ÷
+### æ¨¡å—è®¾è®¡
+
+**Baseæ¨¡å—å°è£…æ“ä½œå…ƒç´ çš„å…¬å…±æ–¹æ³•**
+**Check_config_scriptæ¨¡å—å­˜æ”¾ç¯å¢ƒæ£€æŸ¥çš„è„šæœ¬**
+**Commonæ¨¡å—æ˜¯å°è£…çš„è¯»å–é…ç½®æ–‡ä»¶çš„å…¬å…±æ–¹æ³•ï¼Œç±»ä¼¼äºutilå·¥å…·ç±»**
+**Confæ¨¡å—æ˜¯å­˜æ”¾å…¨å±€é…ç½®æ–‡ä»¶**
+**Grid_serveræ¨¡å—å­˜æ”¾selenium-serverï¼ˆhubå’Œnodeï¼‰å¯åŠ¨batè„šæœ¬ï¼Œä»¥åŠä¸‰ç§seleniumä¸‰ç§æµè§ˆå™¨å‘½ä»¤è¡Œå‚æ•°çš„å…¥å£**
+**Logsæ¨¡å—ï¼Œç”¨äºç”Ÿæˆæ—¥å¿—æ–‡ä»¶**
+**PageObjectæ¨¡å—æå–é¡µé¢å¯¹è±¡å°è£…å…¬å…±æ“ä½œæ–¹æ³•**
+**Reportæ¨¡å—ï¼Œå­˜æ”¾æµ‹è¯•æŠ¥å‘Šï¼Œä»¥åŠæµ‹è¯•æŠ¥å‘Šçš„ç”Ÿæˆæ¨¡æ¿allure**
+**TestCasesæ¨¡å—ï¼Œç”¨äºå­˜æ”¾æµ‹è¯•case**
+
+---
+
+### allureè£…é¥°å™¨
 
 - @allure.severity("critical")
-  - ÓÅÏÈ¼¶£¬°üº¬blocker, critical, normal, minor, trivial¼¸¸ö²»Í¬µÄµÈ¼¶
-    - ²âÊÔÓÃÀıÓÅÏÈ¼¶1£ºblocker£¬ÖĞ¶ÏÈ±Ïİ£¨¿Í»§¶Ë³ÌĞòÎŞÏìÓ¦£¬ÎŞ·¨Ö´ĞĞÏÂÒ»²½²Ù×÷£©
-    - ²âÊÔÓÃÀıÓÅÏÈ¼¶2£ºcritical£¬ÁÙ½çÈ±Ïİ£¨ ¹¦ÄÜµãÈ±Ê§£©
-    - ²âÊÔÓÃÀıÓÅÏÈ¼¶3£ºnormal£¬ÆÕÍ¨È±Ïİ£¨ÊıÖµ¼ÆËã´íÎó£©
-    - ²âÊÔÓÃÀıÓÅÏÈ¼¶4£ºminor£¬´ÎÒªÈ±Ïİ£¨½çÃæ´íÎóÓëUIĞèÇó²»·û£©
-    - ²âÊÔÓÃÀıÓÅÏÈ¼¶5£ºtrivial¼¶±ğ£¬ÇáÎ¢È±Ïİ£¨±ØÊäÏîÎŞÌáÊ¾£¬»òÕßÌáÊ¾²»¹æ·¶£©'
-- @allure.feature("²âÊÔÄ£¿é_demo1")
-  - ¹¦ÄÜ¿é£¬feature¹¦ÄÜ·Ö¿éÊ±±Èstory´ó,¼´Í¬Ê±´æÔÚfeatureºÍstoryÊ±,featureÎª¸¸½Úµã
-- @allure.story("²âÊÔÄ£¿é_demo2")
-  - ¹¦ÄÜ¿é£¬¾ßÓĞÏàÍ¬feature»òstoryµÄÓÃÀı½«¹æÕûµ½ÏàÍ¬Ä£¿éÏÂ,Ö´ĞĞÊ±¿ÉÓÃÓÚÉ¸Ñ¡
-- @allure.issue("BUGºÅ£º123")
-  - ÎÊÌâ±êÊ¶£¬¹ØÁª±êÊ¶ÒÑÓĞµÄÎÊÌâ£¬¿ÉÎªÒ»¸öurlÁ´½ÓµØÖ·
-- @allure.testcase("ÓÃÀıÃû£º²âÊÔ×Ö·û´®ÏàµÈ")
-  - ÓÃÀı±êÊ¶£¬¹ØÁª±êÊ¶ÓÃÀı£¬¿ÉÎªÒ»¸öurlÁ´½ÓµØÖ·
+  - ä¼˜å…ˆçº§ï¼ŒåŒ…å«blocker, critical, normal, minor, trivialå‡ ä¸ªä¸åŒçš„ç­‰çº§
+    - æµ‹è¯•ç”¨ä¾‹ä¼˜å…ˆçº§1ï¼šblockerï¼Œä¸­æ–­ç¼ºé™·ï¼ˆå®¢æˆ·ç«¯ç¨‹åºæ— å“åº”ï¼Œæ— æ³•æ‰§è¡Œä¸‹ä¸€æ­¥æ“ä½œï¼‰
+    - æµ‹è¯•ç”¨ä¾‹ä¼˜å…ˆçº§2ï¼šcriticalï¼Œä¸´ç•Œç¼ºé™·ï¼ˆ åŠŸèƒ½ç‚¹ç¼ºå¤±ï¼‰
+    - æµ‹è¯•ç”¨ä¾‹ä¼˜å…ˆçº§3ï¼šnormalï¼Œæ™®é€šç¼ºé™·ï¼ˆæ•°å€¼è®¡ç®—é”™è¯¯ï¼‰
+    - æµ‹è¯•ç”¨ä¾‹ä¼˜å…ˆçº§4ï¼šminorï¼Œæ¬¡è¦ç¼ºé™·ï¼ˆç•Œé¢é”™è¯¯ä¸UIéœ€æ±‚ä¸ç¬¦ï¼‰
+    - æµ‹è¯•ç”¨ä¾‹ä¼˜å…ˆçº§5ï¼štrivialçº§åˆ«ï¼Œè½»å¾®ç¼ºé™·ï¼ˆå¿…è¾“é¡¹æ— æç¤ºï¼Œæˆ–è€…æç¤ºä¸è§„èŒƒï¼‰'
+- @allure.feature("æµ‹è¯•æ¨¡å—_demo1")
+  - åŠŸèƒ½å—ï¼ŒfeatureåŠŸèƒ½åˆ†å—æ—¶æ¯”storyå¤§,å³åŒæ—¶å­˜åœ¨featureå’Œstoryæ—¶,featureä¸ºçˆ¶èŠ‚ç‚¹
+- @allure.story("æµ‹è¯•æ¨¡å—_demo2")
+  - åŠŸèƒ½å—ï¼Œå…·æœ‰ç›¸åŒfeatureæˆ–storyçš„ç”¨ä¾‹å°†è§„æ•´åˆ°ç›¸åŒæ¨¡å—ä¸‹,æ‰§è¡Œæ—¶å¯ç”¨äºç­›é€‰
+- @allure.issue("BUGå·ï¼š123")
+  - é—®é¢˜æ ‡è¯†ï¼Œå…³è”æ ‡è¯†å·²æœ‰çš„é—®é¢˜ï¼Œå¯ä¸ºä¸€ä¸ªurlé“¾æ¥åœ°å€
+- @allure.testcase("ç”¨ä¾‹åï¼šæµ‹è¯•å­—ç¬¦ä¸²ç›¸ç­‰")
+  - ç”¨ä¾‹æ ‡è¯†ï¼Œå…³è”æ ‡è¯†ç”¨ä¾‹ï¼Œå¯ä¸ºä¸€ä¸ªurlé“¾æ¥åœ°å€
 
 ---
 
-**Õû¸ö¿ò¼ÜÖ÷Òª·ÖÎªÈı²ã£¬Base²ã¡¢PageObject²ã¡¢TestCase²ã£¬²ÉÓÃ´«Í³µÄ»¥ÁªÍøµÄ´¹Ö±¼Ü¹¹Ä£Ê½¡£**
-**ÔªËØ¹«¹²²Ù×÷·½·¨·â×°´æ·ÅÔÚBase²ã**
-**Ò³ÃæÔªËØ²Ù×÷´æ·ÅÔÚµÚ¶ş²ãPageObject²ã£¬ºóÃæÈç¹ûÒ³ÃæÔªËØ±ä»¯£¬Ö±½ÓÔÚµÚ¶ş²ãÏàÓ¦µÄPage¶ÔÏóĞŞ¸Ä¼´¿É**
-**²âÊÔcase´æ·ÅÔÚTestCases²ã£¬Ö÷Òª×ö¶ÏÑÔµÈ²Ù×÷**
+**æ•´ä¸ªæ¡†æ¶ä¸»è¦åˆ†ä¸ºä¸‰å±‚ï¼ŒBaseå±‚ã€PageObjectå±‚ã€TestCaseå±‚ï¼Œé‡‡ç”¨ä¼ ç»Ÿçš„äº’è”ç½‘çš„å‚ç›´æ¶æ„æ¨¡å¼ã€‚**
+**å…ƒç´ å…¬å…±æ“ä½œæ–¹æ³•å°è£…å­˜æ”¾åœ¨Baseå±‚**
+**é¡µé¢å…ƒç´ æ“ä½œå­˜æ”¾åœ¨ç¬¬äºŒå±‚PageObjectå±‚ï¼Œåé¢å¦‚æœé¡µé¢å…ƒç´ å˜åŒ–ï¼Œç›´æ¥åœ¨ç¬¬äºŒå±‚ç›¸åº”çš„Pageå¯¹è±¡ä¿®æ”¹å³å¯**
+**æµ‹è¯•caseå­˜æ”¾åœ¨TestCaseså±‚ï¼Œä¸»è¦åšæ–­è¨€ç­‰æ“ä½œ**
 
 ---
 
-**°²×°ËùĞèÒªµÄ°ü£¬Ê¹ÓÃpycharmµ¼ÈëÏîÄ¿£¬´ò¿ªpycharmµÄterminal£¬Ö»Òªµ½ requirements.txt ËùÔÚµÄÄ¿Â¼ÏÂ£¬Ê¹ÓÃÈçÏÂÃüÁî £¬¾ÍÄÜÔÚµ±Ç°µÄ python »·¾³ÖĞµ¼ÈëËùÓĞĞèÒªµÄ°ü£º**
+**å®‰è£…æ‰€éœ€è¦çš„åŒ…ï¼Œä½¿ç”¨pycharmå¯¼å…¥é¡¹ç›®ï¼Œæ‰“å¼€pycharmçš„terminalï¼Œåªè¦åˆ° requirements.txt æ‰€åœ¨çš„ç›®å½•ä¸‹ï¼Œä½¿ç”¨å¦‚ä¸‹å‘½ä»¤ ï¼Œå°±èƒ½åœ¨å½“å‰çš„ python ç¯å¢ƒä¸­å¯¼å…¥æ‰€æœ‰éœ€è¦çš„åŒ…ï¼š**
 `pip install -r requirements.txt`
 
 ---
-**»·¾³ËµÃ÷£º**
-**¿ª·¢¹¤¾ß£ºpycharm**
-**python°æ±¾£ºpython3.8**
-**²âÊÔcase×ÜÈë¿Ú£ºrun.py**
-**ä¯ÀÀÆ÷£ºChrome**
-**webdriverÇëÑ¡Ôñ¶ÔÓ¦Chrome°æ±¾µÄdriver£¬²¢ÇÒ·ÅÈëpythonµÄ°²×°Ä¿Â¼ÖĞ**
+**ç¯å¢ƒè¯´æ˜ï¼š**
+**å¼€å‘å·¥å…·ï¼špycharm**
+**pythonç‰ˆæœ¬ï¼špython3.8**
+**æµ‹è¯•caseæ€»å…¥å£ï¼šrun.py**
+**æµè§ˆå™¨ï¼šChrome**
+**webdriverè¯·é€‰æ‹©å¯¹åº”Chromeç‰ˆæœ¬çš„driverï¼Œå¹¶ä¸”æ”¾å…¥pythonçš„å®‰è£…ç›®å½•ä¸­**
 
 ---
 
-**ÓĞÈÎºÎÊ¹ÓÃÎÊÌâÇëÁªÏµÎÒ£ºchineseluo**
+**æœ‰ä»»ä½•ä½¿ç”¨é—®é¢˜è¯·è”ç³»æˆ‘ï¼šchineseluo**
 
 ---
 
-### »·¾³´î½¨
+### ç¯å¢ƒæ­å»º
 
-- python°²×°£¬`version:3.7`
-- java»·¾³ÅäÖÃ£¬`version 1.8`£¬win10ÏµÍ³ÖĞÅäÖÃÅäÖÃjava»·¾³£¬²Î¿¼[win10java»·¾³ÅäÖÃ](https://www.runoob.com/w3cnote/windows10-java-setup.html)
-- allure°²×°£º
-  - ²»Í¬Æ½Ì¨°²×°allureµÄ·½·¨²»Í¬£¬ÕâÀï½ö½éÉÜwindowsÆ½Ì¨ÏÂallureµÄ°²×°²½Öè¡£ÆäËüÆ½Ì¨ÇëÔÄ¶Á[allure¹Ù·½ÎÄµµ](https://docs.qameta.io/allure/)½øĞĞ²Ù×÷
-  - ¹Ù·½Ìá¹©µÄ°²×°·½·¨¿ÉÄÜ»áÊÜÍøÂç»·¾³Ó°Ïì¶ø°²×°Ê§°Ü£¬¿ÉÑ¡ÔñÔÚ[GitHub²Ö¿â](https://github.com/allure-framework/allure2 )ÏÂÔØÎÄ¼ş²¢°²×°allure2
-  - Windows»·¾³ÏÂ¿ÉÒÔÓÃÒÔÏÂ²½Öè½øĞĞ°²×°
-    - °²×°scoop£¬Ê¹ÓÃ**¹ÜÀíÔ±È¨ÏŞ**´ò¿ªpowershell´°¿Ú£¬ÊäÈëÃüÁî`Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')`
-    - Èç¹û°²×°²»³É¹¦ÔòÔËĞĞ`Set-ExecutionPolicy RemoteSigned -scope CurrentUser`£¬ÔËĞĞ³É¹¦ºóÖØĞÂÖ´ĞĞµÚÒ»²½
-    - scoop°²×°³É¹¦ºó¿ØÖÆÌ¨»áÊä³ö`Scoop was installed successfully!`
-    - Ö´ĞĞ`scoop install allure`½øĞĞallureµÄ°²×°
-    - allure°²×°³É¹¦ºó¿ØÖÆÌ¨»áÊä³ö`'allure' (2.13.1) was installed successfully!`
-
----
-
-**selenium±¾µØ·Ö²¼Ê½Æô¶¯ÅäÖÃ£º**
-*1¡¢ÅäÖÃJDK»·¾³1.8£¬Ê¹ÓÃjavac ¼ì²éjava»·¾³ÊÇ·ñÅäÖÃÍê³É*
-*2¡¢ÏÂÔØselenium-server-standalone£¬ÏÂÔØµØÖ·£ºhttp://selenium-release.storage.googleapis.com/index.html£¬ĞèÒª¶ÔÓ¦×Ô¼º±¾µØµÄselenium°æ±¾*
-*3¡¢ÏÂÔØ¶ÔÓ¦µÄä¯ÀÀÆ÷µÄdriver£¬·ÅÖÃµ½pythonµÄ°²×°Ä¿Â¼(chrome£ºhttps://sites.google.com/a/chromium.org/chromedriver/downloads¡¢firefox£ºhttps://github.com/mozilla/geckodriver/releases¡¢ie£ºhttp://selenium-release.storage.googleapis.com/index.html?path=3.5/)*
-*4¡¢Æô¶¯hub½Úµã£¨¹ÜÀí½Úµã¸ºÔğÈÎÎñµÄ·Ö·¢£¬Êı¾İÊÕ¼¯Í³¼Æ£©java -jar selenium-server-standalone-3.5.0.jar -role hub£¨ps:¶Ë¿Ú¿ÉÒÔĞŞ¸Ä£©*
-*5¡¢Æô¶¯node½Úµãjava -jar selenium-server-standalone-3.5.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register£¨ps:¶Ë¿Ú¿ÉÒÔĞŞ¸Ä£¬ĞèÒªÆôÓÃ¶àÉÙ¸önode½Úµã£¬Ö»ĞèÒªĞŞ¸Äport¼´¿É£©*
-*6¡¢²âÊÔ´úÂë£ºtest_mul_node.py£¬µ±Èı¸öä¯ÀÀÆ÷¶¼´ò¿ª£¬ËµÃ÷»·¾³ÅäÖÃÃ»ÎÊÌâ*
-
-
+- pythonå®‰è£…ï¼Œ`version:3.7`
+- javaç¯å¢ƒé…ç½®ï¼Œ`version 1.8`ï¼Œwin10ç³»ç»Ÿä¸­é…ç½®é…ç½®javaç¯å¢ƒï¼Œå‚è€ƒ[win10javaç¯å¢ƒé…ç½®](https://www.runoob.com/w3cnote/windows10-java-setup.html)
+- allureå®‰è£…ï¼š
+  - ä¸åŒå¹³å°å®‰è£…allureçš„æ–¹æ³•ä¸åŒï¼Œè¿™é‡Œä»…ä»‹ç»windowså¹³å°ä¸‹allureçš„å®‰è£…æ­¥éª¤ã€‚å…¶å®ƒå¹³å°è¯·é˜…è¯»[allureå®˜æ–¹æ–‡æ¡£](https://docs.qameta.io/allure/)è¿›è¡Œæ“ä½œ
+  - å®˜æ–¹æä¾›çš„å®‰è£…æ–¹æ³•å¯èƒ½ä¼šå—ç½‘ç»œç¯å¢ƒå½±å“è€Œå®‰è£…å¤±è´¥ï¼Œå¯é€‰æ‹©åœ¨[GitHubä»“åº“](https://github.com/allure-framework/allure2 )ä¸‹è½½æ–‡ä»¶å¹¶å®‰è£…allure2
+  - Windowsç¯å¢ƒä¸‹å¯ä»¥ç”¨ä»¥ä¸‹æ­¥éª¤è¿›è¡Œå®‰è£…
+    - å®‰è£…scoopï¼Œä½¿ç”¨**ç®¡ç†å‘˜æƒé™**æ‰“å¼€powershellçª—å£ï¼Œè¾“å…¥å‘½ä»¤`Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')`
+    - å¦‚æœå®‰è£…ä¸æˆåŠŸåˆ™è¿è¡Œ`Set-ExecutionPolicy RemoteSigned -scope CurrentUser`ï¼Œè¿è¡ŒæˆåŠŸåé‡æ–°æ‰§è¡Œç¬¬ä¸€æ­¥
+    - scoopå®‰è£…æˆåŠŸåæ§åˆ¶å°ä¼šè¾“å‡º`Scoop was installed successfully!`
+    - æ‰§è¡Œ`scoop install allure`è¿›è¡Œallureçš„å®‰è£…
+    - allureå®‰è£…æˆåŠŸåæ§åˆ¶å°ä¼šè¾“å‡º`'allure' (2.13.1) was installed successfully!`
 
 ---
 
-**±¾µØÆô¶¯·Ö²¼Ê½µ÷ÊÔ·½·¨**
+**seleniumæœ¬åœ°åˆ†å¸ƒå¼å¯åŠ¨é…ç½®ï¼š**
+*1ã€é…ç½®JDKç¯å¢ƒ1.8ï¼Œä½¿ç”¨javac æ£€æŸ¥javaç¯å¢ƒæ˜¯å¦é…ç½®å®Œæˆ*
+*2ã€ä¸‹è½½selenium-server-standaloneï¼Œä¸‹è½½åœ°å€ï¼šhttp://selenium-release.storage.googleapis.com/index.htmlï¼Œéœ€è¦å¯¹åº”è‡ªå·±æœ¬åœ°çš„seleniumç‰ˆæœ¬*
+*3ã€ä¸‹è½½å¯¹åº”çš„æµè§ˆå™¨çš„driverï¼Œæ”¾ç½®åˆ°pythonçš„å®‰è£…ç›®å½•(chromeï¼šhttps://sites.google.com/a/chromium.org/chromedriver/downloadsã€firefoxï¼šhttps://github.com/mozilla/geckodriver/releasesã€ieï¼šhttp://selenium-release.storage.googleapis.com/index.html?path=3.5/)*
+*4ã€å¯åŠ¨hubèŠ‚ç‚¹ï¼ˆç®¡ç†èŠ‚ç‚¹è´Ÿè´£ä»»åŠ¡çš„åˆ†å‘ï¼Œæ•°æ®æ”¶é›†ç»Ÿè®¡ï¼‰java -jar selenium-server-standalone-3.5.0.jar -role hubï¼ˆps:ç«¯å£å¯ä»¥ä¿®æ”¹ï¼‰*
+*5ã€å¯åŠ¨nodeèŠ‚ç‚¹java -jar selenium-server-standalone-3.5.0.jar -role node -port 5555 -hub http://localhost:4444/grid/registerï¼ˆps:ç«¯å£å¯ä»¥ä¿®æ”¹ï¼Œéœ€è¦å¯ç”¨å¤šå°‘ä¸ªnodeèŠ‚ç‚¹ï¼Œåªéœ€è¦ä¿®æ”¹portå³å¯ï¼‰*
+*6ã€æµ‹è¯•ä»£ç ï¼štest_mul_node.pyï¼Œå½“ä¸‰ä¸ªæµè§ˆå™¨éƒ½æ‰“å¼€ï¼Œè¯´æ˜ç¯å¢ƒé…ç½®æ²¡é—®é¢˜*
 
-1¡¢Ö´ĞĞstart_server.bat£¬Æô¶¯hubÓënode£¬Ê¹ÓÃä¯ÀÀÆ÷µÇÂ¼127.0.0.1:4444£¬µã»÷console¿´µ½£¬Èı¸önodeµÄ½ÚµãĞÅÏ¢£¬±íÊ¾·Ö²¼Ê½·şÎñÆô¶¯³É¹¦
 
-2¡¢Ö´ĞĞstart_run_all_browser£¬Æô¶¯ÈıÖÖä¯ÀÀÆ÷Ö´ĞĞ½Å±¾Ä£Ê½£¨IEĞèÒª½øĞĞä¯ÀÀÆ÷ÉèÖÃ£¬·ñÔò»áÖ´ĞĞÊ§°Ü£©
 
 ---
 
-**dockerÆô¶¯·Ö²¼Ê½µ÷ÊÔ·½·¨**
+**æœ¬åœ°å¯åŠ¨åˆ†å¸ƒå¼è°ƒè¯•æ–¹æ³•**
 
-Ò»¡¢À­È¡seleniumµÄdocker¾µÏñ
+1ã€æ‰§è¡Œstart_server.batï¼Œå¯åŠ¨hubä¸nodeï¼Œä½¿ç”¨æµè§ˆå™¨ç™»å½•127.0.0.1:4444ï¼Œç‚¹å‡»consoleçœ‹åˆ°ï¼Œä¸‰ä¸ªnodeçš„èŠ‚ç‚¹ä¿¡æ¯ï¼Œè¡¨ç¤ºåˆ†å¸ƒå¼æœåŠ¡å¯åŠ¨æˆåŠŸ
 
-~~~ ¾µÏñÀ­È¡
+2ã€æ‰§è¡Œstart_run_all_browserï¼Œå¯åŠ¨ä¸‰ç§æµè§ˆå™¨æ‰§è¡Œè„šæœ¬æ¨¡å¼ï¼ˆIEéœ€è¦è¿›è¡Œæµè§ˆå™¨è®¾ç½®ï¼Œå¦åˆ™ä¼šæ‰§è¡Œå¤±è´¥ï¼‰
+
+---
+
+**dockerå¯åŠ¨åˆ†å¸ƒå¼è°ƒè¯•æ–¹æ³•**
+
+ä¸€ã€æ‹‰å–seleniumçš„dockeré•œåƒ
+
+~~~ é•œåƒæ‹‰å–
 docker pull selenium/hub
 docker pull selenium/node-firefox
 docker pull selenium/node-chrome
 ~~~
 
-¶ş¡¢¼ì²é¾µÏñÊÇ·ñÀ­È¡³É¹¦
+äºŒã€æ£€æŸ¥é•œåƒæ˜¯å¦æ‹‰å–æˆåŠŸ
 
-~~~ ¼ì²é¾µÏñ
+~~~ æ£€æŸ¥é•œåƒ
 docker images | grep selenium
 ~~~
 
-Èı¡¢Æô¶¯docker¾µÏñ
+ä¸‰ã€å¯åŠ¨dockeré•œåƒ
 
-~~~ Æô¶¯docker¾µÏñ
+~~~ å¯åŠ¨dockeré•œåƒ
 docker run -p 5555:4444 -d --name hub selenium/hub
 docker run -P -d --link hub:hub --name firefox selenimu/node-firefox
 docker run -P -d --link hub:hub --name chrome selenimu/node-chrome
 ~~~
 
-ËÄ¡¢¼ì²éÊÇ·ñÆô¶¯³É¹¦
+å››ã€æ£€æŸ¥æ˜¯å¦å¯åŠ¨æˆåŠŸ
 
-Ê¹ÓÃdocker»·¾³ËŞÖ÷»úµÄIP+Ó³ÉäµÄ¶Ë¿Ú½øĞĞ·ÃÎÊ£¬²é¿´console£¬²é¿´Óëhub½Úµã½¨Á¢Á¬½ÓµÄnode½ÚµãµÄIPºÍ¶Ë¿ÚµÈĞÅÏ¢ÊÇ·ñÕıÈ·
+ä½¿ç”¨dockerç¯å¢ƒå®¿ä¸»æœºçš„IP+æ˜ å°„çš„ç«¯å£è¿›è¡Œè®¿é—®ï¼ŒæŸ¥çœ‹consoleï¼ŒæŸ¥çœ‹ä¸hubèŠ‚ç‚¹å»ºç«‹è¿æ¥çš„nodeèŠ‚ç‚¹çš„IPå’Œç«¯å£ç­‰ä¿¡æ¯æ˜¯å¦æ­£ç¡®
 
-Îå¡¢µ÷ÊÔÄ£Ê½£¨¿ÉÑ¡£©
+äº”ã€è°ƒè¯•æ¨¡å¼ï¼ˆå¯é€‰ï¼‰
 
-1¡¢server+browserµ÷ÊÔÄ£Ê½£ºÊ¹ÓÃ·şÎñ¶ËºÍnode¼¯³ÉÔÚÒ»ÆğµÄ¾µÏñ
+1ã€æ‰‹åŠ¨
 
-~~~ ¾µÏñ
+- server+browserè°ƒè¯•æ¨¡å¼ï¼šä½¿ç”¨æœåŠ¡ç«¯å’Œnodeé›†æˆåœ¨ä¸€èµ·çš„é•œåƒ
+
+~~~ é•œåƒ
 docker pull selenium/standalone-chrome-debug
 docker pull selenium/standalone-firefox-debug
 ~~~
 
-2¡¢server+node(browser)µ÷ÊÔÄ£Ê½£¬Ê¹ÓÃhub+nodeµÄ·½Ê½£¬¾µÏñÊ¹ÓÃdebug¼¶±ğÈÕÖ¾
+- server+node(browser)è°ƒè¯•æ¨¡å¼ï¼Œä½¿ç”¨hub+nodeçš„æ–¹å¼ï¼Œé•œåƒä½¿ç”¨debugçº§åˆ«æ—¥å¿—
 
-~~~ ¾µÏñ
+~~~ é•œåƒ
 docker pull selenium/standalone-chrome-debug
 docker pull selenium/standalone-firefox-debug
 ~~~
 
-~~~ ½¨Á¢ÈİÆ÷Á´½Ó
+~~~ å»ºç«‹å®¹å™¨é“¾æ¥
 docker run -d -p 5900:5900 --link hub:hub selenium/node-chrome-debug
 ~~~
 
-²é¿´LinuxÏÂä¯ÀÀÆ÷ÔËĞĞµÄÍ¼ĞÎ½çÃæ
+2ã€è„šæœ¬å¯åŠ¨
 
-Ê¹ÓÃvnc viewer£¬ÏÂÔØµØÖ·£º`https://www.realvnc.com/en/connect/download/viewer/windows/`
+- å¯ä»¥æ‰§è¡Œstart_server_docker.pyè„šæœ¬ç›´æ¥åˆ›å»ºdockeræœåŠ¡ï¼Œè„šæœ¬ä¼šè‡ªåŠ¨æ£€æŸ¥dockeré•œåƒä»“åº“æ˜¯å¦å«æœ‰æ‰€éœ€é•œåƒï¼Œè‡ªåŠ¨æ‹‰å–ï¼Œè‡ªåŠ¨åˆ›å»ºæ‰€éœ€å®¹å™¨ï¼Œä»¥å‰åˆ›å»ºçš„å«æœ‰seleniumåå­—çš„é•œåƒä¼šè¢«åˆ é™¤
 
-ÊäÈëdockerËùÔÚ»·¾³µÄËŞÖ÷»úIP+Ó³ÉäµÄ¶Ë¿Ú£¨5900£©½øĞĞÁ¬½Ó£¬Ä¬ÈÏÃÜÂë£ºsecret
+æŸ¥çœ‹Linuxä¸‹æµè§ˆå™¨è¿è¡Œçš„å›¾å½¢ç•Œé¢
+
+ä½¿ç”¨vnc viewerï¼Œä¸‹è½½åœ°å€ï¼š`https://www.realvnc.com/en/connect/download/viewer/windows/`
+
+è¾“å…¥dockeræ‰€åœ¨ç¯å¢ƒçš„å®¿ä¸»æœºIP+æ˜ å°„çš„ç«¯å£ï¼ˆ5900ï¼‰è¿›è¡Œè¿æ¥ï¼Œé»˜è®¤å¯†ç ï¼šsecret
+å…­ã€æœ¬åœ°è°ƒè¯•/åˆ†å¸ƒå¼è°ƒè¯•/è¿œç¨‹åˆ†å¸ƒå¼è°ƒè¯•ç­‰æ“ä½œ
+
+æœ¬åœ°è°ƒè¯•ï¼š
+
+- å…¨å±€é…ç½®conftest.pyæ–‡ä»¶ä¸­å¯ç”¨function_driveræ–¹æ³•ï¼Œåœ¨TestCasesçš„æ¯ä¸ªå­åŠŸèƒ½é¡µé¢æ¨¡å—è¿›è¡Œå¯ç”¨driverä¼ å‚æ—¶ï¼Œä½¿ç”¨function_driveræ–¹æ³•
+
+~~~ python
+import pytest
+from PageObject.login_page import Login_page
+
+@pytest.fixture(scope="function")
+def login_page_class_load(function_driver):
+    login_page = Login_page(function_driver)
+    yield login_page
+
+~~~
+
+
+
+æœ¬åœ°åˆ†å¸ƒå¼è°ƒè¯•ï¼š
+
+- å…¨å±€é…ç½®conftest.pyæ–‡ä»¶ä¸­å¯ç”¨function_remote_driveræ–¹æ³•ï¼Œåœ¨TestCasesçš„æ¯ä¸ªå­åŠŸèƒ½é¡µé¢æ¨¡å—è¿›è¡Œå¯ç”¨driverä¼ å‚æ—¶ï¼Œä½¿ç”¨function_remote_driveræ–¹æ³•
+
+~~~
+import pytest
+from PageObject.login_page import Login_page
+
+@pytest.fixture(scope="function")
+def login_page_class_load(function_remote_driver):
+    login_page = Login_page(function_remote_driver)
+    yield login_page
+~~~
+
+windowsåˆ†å¸ƒå¼è°ƒè¯•ï¼š
+
+- æ‰§è¡Œstart_server_windows.batè„šæœ¬ï¼Œå¯åŠ¨seleniumçš„hubå’ŒnodeèŠ‚ç‚¹
+- å¯åŠ¨è„šæœ¬çš„ä¸¤ç§æ–¹å¼
+  - ç›´æ¥åœ¨pycharmç¼–è¾‘å™¨æ‰§è¡Œrun.pyæ–‡ä»¶
+  - æ‰§è¡Œstart_run_all_browser.batï¼Œå¯åŠ¨ä¸‰ä¸ªæµè§ˆå™¨è¿›è¡Œæµ‹è¯•ï¼ˆps:IEéœ€è¦è¿›è¡Œæµè§ˆå™¨è®¾ç½®ï¼Œæ‰å¯è¿›è¡Œè‡ªåŠ¨åŒ–è„šæœ¬è¿è¡Œï¼‰
+  - ç›´æ¥ä½¿ç”¨å‘½ä»¤è¡Œä¼ å‚ï¼Œåœ¨terminalç•Œé¢æ‰§è¡Œï¼Œpython run.py firefox(é»˜è®¤ä½¿ç”¨chromeæ‰§è¡Œè„šæœ¬ï¼Œå¦‚æœéœ€è¦é€‰æ‹©ä¸åŒçš„æµè§ˆå™¨ï¼Œéœ€è¦è¿›è¡ŒæŒ‡å®š)
 
 ---
 
-### ÈçºÎ±àĞ´²âÊÔÓÃÀı
+### å¦‚ä½•ç¼–å†™æµ‹è¯•ç”¨ä¾‹
 
-ÏÂÃæÏêÏ¸ËµÃ÷ÈçºÎÌí¼ÓÒ»ÌõÓÃÀı£¬ÒÔµÇÂ¼½çÃæÑİÊ¾
+ä¸‹é¢è¯¦ç»†è¯´æ˜å¦‚ä½•æ·»åŠ ä¸€æ¡ç”¨ä¾‹ï¼Œä»¥ç™»å½•ç•Œé¢æ¼”ç¤º
 
-1¡¢ÔÚPageObjectÄ£¿é´´½¨Ò»¸ölogin_page.py
+1ã€åœ¨PageObjectæ¨¡å—åˆ›å»ºä¸€ä¸ªlogin_page.py
 
 ![image-20200601211103002](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601211103002.png)
 
-2¡¢·â×°loginÒ³Ãæ²Ù×÷ÔªËØ¶ÔÏó
+2ã€å°è£…loginé¡µé¢æ“ä½œå…ƒç´ å¯¹è±¡
 
 ~~~ login_page.py
 # coding:utf-8
@@ -173,49 +219,49 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
-# ·â×°ËÙÎĞÊÖÓÎ¼ÓËÙÆ÷µÇÂ¼Ò³Ãæ²Ù×÷¶ÔÏó¼°¸÷¸öÔªËØ¼°²Ù×÷·½·¨
+# å°è£…é€Ÿæ¶¡æ‰‹æ¸¸åŠ é€Ÿå™¨ç™»å½•é¡µé¢æ“ä½œå¯¹è±¡åŠå„ä¸ªå…ƒç´ åŠæ“ä½œæ–¹æ³•
 class Login_page(Base):
     def __init__(self, driver):
         super().__init__(driver)
 
     def login_by_config_url(self):
         """
-            ´ÓÅäÖÃÎÄ¼şconfig.ini»ñÈ¡µÇÂ¼µØÖ·
-        @return: µÇÂ¼µØÖ·
+            ä»é…ç½®æ–‡ä»¶config.iniè·å–ç™»å½•åœ°å€
+        @return: ç™»å½•åœ°å€
         """
         return super().login_by_config_url()
 
     def get_home_page_url(self, url):
         """
-            µÇÂ¼²âÊÔµØÖ·URL
-        @param url: µÇÂ¼Ò³ÃæURL
+            ç™»å½•æµ‹è¯•åœ°å€URL
+        @param url: ç™»å½•é¡µé¢URL
         """
         self.get_url(url)
 
     def get_username_attribute_value(self):
         """
-            »ñµÃÕËºÅÊäÈë¿òµÄplaceholderÖµ
-        @return: »ñµÃÕËºÅÊäÈë¿òµÄplaceholderÖµ
+            è·å¾—è´¦å·è¾“å…¥æ¡†çš„placeholderå€¼
+        @return: è·å¾—è´¦å·è¾“å…¥æ¡†çš„placeholderå€¼
         """
         return super().get_placeholder((By.NAME, "Username"))
 
     def get_password_attribute_value(self):
         """
-            »ñµÃÃÜÂëÊäÈë¿òµÄplaceholderÖµ
-        @return:»ñµÃÃÜÂëÊäÈë¿òµÄplaceholderÖµ
+            è·å¾—å¯†ç è¾“å…¥æ¡†çš„placeholderå€¼
+        @return:è·å¾—å¯†ç è¾“å…¥æ¡†çš„placeholderå€¼
         """
         return super().get_placeholder((By.NAME, "Password"))
 ~~~
 
 
 
-3¡¢ÔÚTestCasesÏÂÃæĞÂ½¨Ò»¸ö°ü£¬ÀıÈçLoginÄ£¿é£¬²âÊÔµÇÂ¼Ò³Ãæ
+3ã€åœ¨TestCasesä¸‹é¢æ–°å»ºä¸€ä¸ªåŒ…ï¼Œä¾‹å¦‚Loginæ¨¡å—ï¼Œæµ‹è¯•ç™»å½•é¡µé¢
 
 ![image-20200601210858042](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601210858042.png)
 
-4¡¢ÔÚLoginÏÂÃæ´´½¨Ò»¸öconftest.pyºÍtest_login_page_case.py
+4ã€åœ¨Loginä¸‹é¢åˆ›å»ºä¸€ä¸ªconftest.pyå’Œtest_login_page_case.py
 
-conftest.pyÖĞÖ¸¶¨ĞèÒª¼ÓÔØµÄ²âÊÔÒ³Ãæ¶ÔÏó£¬Ê¹ÓÃscope¼¶±ğÎªfunction
+conftest.pyä¸­æŒ‡å®šéœ€è¦åŠ è½½çš„æµ‹è¯•é¡µé¢å¯¹è±¡ï¼Œä½¿ç”¨scopeçº§åˆ«ä¸ºfunction
 
 ~~~ conftest.py
 import pytest
@@ -228,7 +274,7 @@ def login_page_class_load(function_driver):
     yield login_page
 ~~~
 
-test_login_page_case.pyÖĞÃ¿¸ö²âÊÔcaseĞèÒªµ÷ÓÃÒ³ÃæÄ£¿éconftest.pyÖĞµÄfunction£¬ÒÔ¼°È«¾ÖÅäÖÃconftest.pyÖĞfunction_driver£¨»òÕßfunction_remote_driver£¬·Ö²¼Ê½ĞèÒªÊ¹ÓÃ¸Ã²ÎÊı)£¬¶ÏÑÔÊ¹ÓÃBaseÄ£¿éÖĞµÄassert_methodµÄAssert_method£¬ÀïÃæ·â×°ÁË¶ÏÑÔ·½·¨£¬°üº¬ÁËallure¶ÏÑÔÊ§°Ü½ØÍ¼µÈ²Ù×÷£¬¸ù¾İ²»Í¬µÄ¶ÏÑÔ³¡¾°È¡ÓÃ£¬»òÕß×Ô¼ºÔÙ½øĞĞ·â×°
+test_login_page_case.pyä¸­æ¯ä¸ªæµ‹è¯•caseéœ€è¦è°ƒç”¨é¡µé¢æ¨¡å—conftest.pyä¸­çš„functionï¼Œä»¥åŠå…¨å±€é…ç½®conftest.pyä¸­function_driverï¼ˆæˆ–è€…function_remote_driverï¼Œåˆ†å¸ƒå¼éœ€è¦ä½¿ç”¨è¯¥å‚æ•°)ï¼Œæ–­è¨€ä½¿ç”¨Baseæ¨¡å—ä¸­çš„assert_methodçš„Assert_methodï¼Œé‡Œé¢å°è£…äº†æ–­è¨€æ–¹æ³•ï¼ŒåŒ…å«äº†allureæ–­è¨€å¤±è´¥æˆªå›¾ç­‰æ“ä½œï¼Œæ ¹æ®ä¸åŒçš„æ–­è¨€åœºæ™¯å–ç”¨ï¼Œæˆ–è€…è‡ªå·±å†è¿›è¡Œå°è£…
 
 ~~~ test_login_page_case.py
 # coding:utf-8
@@ -244,22 +290,22 @@ class Test_login_page_case:
 
     @allure.story("Login")
     @allure.severity("normal")
-    @allure.description("²âÊÔµÇÂ¼")
-    @allure.link("https://www.baidu.com", name="Á¬½ÓÌø×ª°Ù¶È")
-    @allure.testcase("https://www.sina.com", name="²âÊÔÓÃÀıÎ»ÖÃ")
-    @allure.title("Ö´ĞĞ²âÊÔÓÃÀıÓÃÓÚµÇÂ¼Ä£¿é")
+    @allure.description("æµ‹è¯•ç™»å½•")
+    @allure.link("https://www.baidu.com", name="è¿æ¥è·³è½¬ç™¾åº¦")
+    @allure.testcase("https://www.sina.com", name="æµ‹è¯•ç”¨ä¾‹ä½ç½®")
+    @allure.title("æ‰§è¡Œæµ‹è¯•ç”¨ä¾‹ç”¨äºç™»å½•æ¨¡å—")
     def test_DLZC1(self, login_page_class_load, function_driver):
-        logging.info("ÓÃÀı±àºÅ±àÂë£º{}".format(inspect.stack()[0][3]))
+        logging.info("ç”¨ä¾‹ç¼–å·ç¼–ç ï¼š{}".format(inspect.stack()[0][3]))
         login_page_class_load.login_by_config_url()
         username_input_attribute_value = login_page_class_load.get_username_attribute_value()
-        Assert_method.assert_equal_screen_shot(function_driver, (username_input_attribute_value, "ÊÖ»úºÅÂë"))
+        Assert_method.assert_equal_screen_shot(function_driver, (username_input_attribute_value, "æ‰‹æœºå·ç "))
 ~~~
 
-5¡¢Ö´ĞĞÓÃÀı
+5ã€æ‰§è¡Œç”¨ä¾‹
 
-Ö´ĞĞÓÃÀı¿ÉÒÔÍ¨¹ıÁ½ÖÖ³£ÓÃµÄ·½·¨½øĞĞ
+æ‰§è¡Œç”¨ä¾‹å¯ä»¥é€šè¿‡ä¸¤ç§å¸¸ç”¨çš„æ–¹æ³•è¿›è¡Œ
 
-1. pycharmÖĞÅäÖÃ`test runner`Îª`pytest`£¬ÅäÖÃÂ·¾¶Îª`settings->Tools->Python Integrated Tools->Testing`£»ÅäÖÃÍê³Éºó¾ÍÄÜ¹»ÔÚ´ò¿ª²âÊÔÓÃÀıÎÄ¼şºó¿´µ½¿ÉÖ´ĞĞµÄ°´Å¥ÁË
-2. ÔÚ¸ùÄ¿Â¼ÏÂµÄ`run.py`ÎÄ¼şÖĞÔËĞĞ£¬ĞèÒªÅäÖÃÒªÔËĞĞµÄ`Fixture`ºó¾Í¿ÉÒÔÔËĞĞÁË¡£ÀıÈçµ±ÄãÔÚµ÷ÊÔ`Login`Ê±Ö»ĞèÒª±£Ö¤`allure_features_list`ÖĞÖ»ÓĞ`Login`¾ÍĞĞÁË£¬`pytest`»á×Ô¶¯Ñ°ÕÒ`Fixture`ÖµÎª`Login`²ÎÊıµÄÓÃÀı
+1. pycharmä¸­é…ç½®`test runner`ä¸º`pytest`ï¼Œé…ç½®è·¯å¾„ä¸º`settings->Tools->Python Integrated Tools->Testing`ï¼›é…ç½®å®Œæˆåå°±èƒ½å¤Ÿåœ¨æ‰“å¼€æµ‹è¯•ç”¨ä¾‹æ–‡ä»¶åçœ‹åˆ°å¯æ‰§è¡Œçš„æŒ‰é’®äº†
+2. åœ¨æ ¹ç›®å½•ä¸‹çš„`run.py`æ–‡ä»¶ä¸­è¿è¡Œï¼Œéœ€è¦é…ç½®è¦è¿è¡Œçš„`Fixture`åå°±å¯ä»¥è¿è¡Œäº†ã€‚ä¾‹å¦‚å½“ä½ åœ¨è°ƒè¯•`Login`æ—¶åªéœ€è¦ä¿è¯`allure_features_list`ä¸­åªæœ‰`Login`å°±è¡Œäº†ï¼Œ`pytest`ä¼šè‡ªåŠ¨å¯»æ‰¾`Fixture`å€¼ä¸º`Login`å‚æ•°çš„ç”¨ä¾‹
 
 ![image-20200601211933915](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601211933915.png)
