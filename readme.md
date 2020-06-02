@@ -80,13 +80,19 @@
 
 ---
 
-**selenium本地分布式启动配置：**
-*1、配置JDK环境1.8，使用javac 检查java环境是否配置完成*
-*2、下载selenium-server-standalone，下载地址：http://selenium-release.storage.googleapis.com/index.html，需要对应自己本地的selenium版本*
-*3、下载对应的浏览器的driver，放置到python的安装目录(chrome：https://sites.google.com/a/chromium.org/chromedriver/downloads、firefox：https://github.com/mozilla/geckodriver/releases、ie：http://selenium-release.storage.googleapis.com/index.html?path=3.5/)*
-*4、启动hub节点（管理节点负责任务的分发，数据收集统计）java -jar selenium-server-standalone-3.5.0.jar -role hub（ps:端口可以修改）*
-*5、启动node节点java -jar selenium-server-standalone-3.5.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register（ps:端口可以修改，需要启用多少个node节点，只需要修改port即可）*
-*6、测试代码：test_mul_node.py，当三个浏览器都打开，说明环境配置没问题*
+
+
+**selenium本地分布式启动配置(除了第一步和第三步之外，其他操作已集成脚本中，执行start_server_windows.bat即可)：**
+
+**1、配置JDK环境1.8，使用javac 检查java环境是否配置完成**
+
+**2、下载selenium-server-standalone，下载地址：http://selenium-release.storage.googleapis.com/index.html，需要对应自己本地的selenium版本**
+
+**3、下载对应的浏览器的driver，放置到python的安装目录(chrome：https://sites.google.com/a/chromium.org/chromedriver/downloads、firefox：https://github.com/mozilla/geckodriver/releases、ie：http://selenium-release.storage.googleapis.com/index.html?path=3.5/)**
+
+**4、启动hub节点（管理节点负责任务的分发，数据收集统计）java -jar selenium-server-standalone-3.5.0.jar -role hub（ps:端口可以修改）**
+
+**5、启动node节点java -jar selenium-server-standalone-3.5.0.jar -role node -port 5555 -hub http://localhost:4444/grid/register（ps:端口可以修改，需要启用多少个node节点，只需要修改port即可）**
 
 
 
@@ -182,7 +188,7 @@ def login_page_class_load(function_driver):
 
 - 全局配置conftest.py文件中启用function_remote_driver方法，在TestCases的每个子功能页面模块进行启用driver传参时，使用function_remote_driver方法
 
-~~~
+~~~python
 import pytest
 from PageObject.login_page import Login_page
 
@@ -208,11 +214,9 @@ windows分布式调试：
 
 1、在PageObject模块创建一个login_page.py
 
-![image-20200601211103002](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601211103002.png)
-
 2、封装login页面操作元素对象
 
-~~~ login_page.py
+~~~ python
 # coding:utf-8
 from Base.base import Base
 from selenium.webdriver.common.by import By
@@ -257,13 +261,11 @@ class Login_page(Base):
 
 3、在TestCases下面新建一个包，例如Login模块，测试登录页面
 
-![image-20200601210858042](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601210858042.png)
-
 4、在Login下面创建一个conftest.py和test_login_page_case.py
 
 conftest.py中指定需要加载的测试页面对象，使用scope级别为function
 
-~~~ conftest.py
+~~~ python
 import pytest
 from PageObject.login_page import Login_page
 
@@ -276,7 +278,7 @@ def login_page_class_load(function_driver):
 
 test_login_page_case.py中每个测试case需要调用页面模块conftest.py中的function，以及全局配置conftest.py中function_driver（或者function_remote_driver，分布式需要使用该参数)，断言使用Base模块中的assert_method的Assert_method，里面封装了断言方法，包含了allure断言失败截图等操作，根据不同的断言场景取用，或者自己再进行封装
 
-~~~ test_login_page_case.py
+~~~ python
 # coding:utf-8
 import pytest
 import allure
@@ -308,4 +310,10 @@ class Test_login_page_case:
 1. pycharm中配置`test runner`为`pytest`，配置路径为`settings->Tools->Python Integrated Tools->Testing`；配置完成后就能够在打开测试用例文件后看到可执行的按钮了
 2. 在根目录下的`run.py`文件中运行，需要配置要运行的`Fixture`后就可以运行了。例如当你在调试`Login`时只需要保证`allure_features_list`中只有`Login`就行了，`pytest`会自动寻找`Fixture`值为`Login`参数的用例
 
-![image-20200601211933915](C:\Users\chineseluo\AppData\Roaming\Typora\typora-user-images\image-20200601211933915.png)
+~~~ python
+    allure_features_list = [
+        'Register_page_case',
+        'Login_page_case'
+    ]
+~~~
+

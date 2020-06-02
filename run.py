@@ -41,7 +41,7 @@ def run_all_case(browser):
     allure_features = ["--allure-features"]
     allure_features_list = [
         'Register_page_case',
-         'Login_page_case'
+        'Login_page_case'
     ]
     allure_features_args = ",".join(allure_features_list)
     # 定义stories集合
@@ -50,7 +50,8 @@ def run_all_case(browser):
     allure_path_args = ['--alluredir', report_dir, '--clean-alluredir']
     test_args = ['-s', '-q', '--browser={}'.format(browser), '--browser_opt={}'.format("open")]
     # 拼接运行参数
-    run_args = test_args + allure_path_args + allure_features + [allure_features_args] + allure_stories + allure_stories_args
+    run_args = test_args + allure_path_args + allure_features + [
+        allure_features_args] + allure_stories + allure_stories_args
     # 使用pytest.main
     pytest.main(run_args)
     # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
@@ -67,8 +68,8 @@ def run_all_case(browser):
     # 打印url，方便直接访问
     url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1],
                                                                                       browser.replace(" ", "_"))
-    logging.info("输出项目跟目录{}".format(root_dir.split('/')[-1]))
-    logging.info(url)
+    print("输出项目跟目录{}".format(root_dir.split('/')[-1]))
+    print(url)
 
 
 # 命令行参数调用

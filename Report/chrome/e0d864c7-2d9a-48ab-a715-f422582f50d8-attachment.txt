@@ -1,0 +1,13 @@
+13:51:08 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+13:51:10 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4748a0e2b705b70c9d74ef06ba21d8df", element="26c21537-ada3-4a4e-ac4b-0d8b4037fe04")>
+13:51:10 INFO 元素对象点击成功
+13:51:10 INFO 正在定位元素信息：定位方式->name,value值->Username
+13:51:12 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4748a0e2b705b70c9d74ef06ba21d8df", element="3a9bb9a8-d2da-4c67-94c5-4f64d7bbf012")>
+13:51:12 INFO 元素对象输入值成功，值为：1
+13:51:12 INFO 正在定位元素信息：定位方式->class name,value值->RegisterBtn
+13:51:14 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4748a0e2b705b70c9d74ef06ba21d8df", element="043eddc3-7041-4b02-9ba6-d062b89a3d7a")>
+13:51:14 INFO 元素对象点击成功
+13:51:14 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
+13:51:16 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="4748a0e2b705b70c9d74ef06ba21d8df", element="88db4b84-973e-4003-b1ab-daa996f3b6b9")>
+13:51:16 INFO 元素text值：手机号码格式不正确
+13:51:16 INFO 正在进行元素断言：断言方式->手机号码格式不正确：是否等于->手机号码格式不正确

@@ -1,7 +1,0 @@
-20:55:05 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
-20:55:07 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="ed913d2015355719a58aec0635ad41dc", element="6d0b9497-3118-4f6d-b3e8-edd075147fd0")>
-20:55:07 INFO 元素对象点击成功
-20:55:07 INFO 正在定位元素信息：定位方式->name,value值->Username
-20:55:09 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="ed913d2015355719a58aec0635ad41dc", element="4afdc076-ebcc-4e4a-8233-7f2747ec0f31")>
-20:55:09 INFO 该元素对象获取placeholder成功，placeholder值为：手机号码
-20:55:09 INFO 正在进行元素断言：断言方式->手机号码：是否等于->手机号码

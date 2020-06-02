@@ -1,0 +1,10 @@
+13:50:53 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+13:50:55 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="c16ece109259ef2b08f1d5b3a22b6eab", element="cd1f5091-e797-4ab9-bf3c-e81b95568073")>
+13:50:55 INFO 元素对象点击成功
+13:50:55 INFO 正在定位元素信息：定位方式->link text,value值->发送验证码
+13:50:57 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="c16ece109259ef2b08f1d5b3a22b6eab", element="d1218846-afdd-4d2d-83e7-622f03742005")>
+13:50:57 INFO 元素对象点击成功
+13:50:57 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
+13:50:59 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="c16ece109259ef2b08f1d5b3a22b6eab", element="84d51b3f-1b19-4836-a5b7-76745fa42070")>
+13:50:59 INFO 元素text值：用户名不能为空
+13:50:59 INFO 正在进行元素断言：断言方式->用户名不能为空：是否等于->用户名不能为空

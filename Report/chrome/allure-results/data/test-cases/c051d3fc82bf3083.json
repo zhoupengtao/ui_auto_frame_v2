@@ -1,0 +1,196 @@
+{
+  "uid" : "c051d3fc82bf3083",
+  "name" : "执行测试用例用于登录模块",
+  "fullName" : "TestCases.Register.test_register_page_case.Test_register_page_case#test_DLZC9",
+  "historyId" : "e334e67a74044c126615babd9fcae303",
+  "time" : {
+    "start" : 1591077020771,
+    "stop" : 1591077030098,
+    "duration" : 9327
+  },
+  "description" : "测试登录",
+  "descriptionHtml" : "<p>测试登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "function_driver",
+    "time" : {
+      "start" : 1591077017601,
+      "stop" : 1591077020765,
+      "duration" : 3164
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login_page_class_load",
+    "time" : {
+      "start" : 1591077020765,
+      "stop" : 1591077020766,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "register_page_class_load",
+    "time" : {
+      "start" : 1591077020766,
+      "stop" : 1591077020767,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1591077017600,
+      "stop" : 1591077017601,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "测试登录",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cd25fa72b6cbf008",
+      "name" : "log",
+      "source" : "cd25fa72b6cbf008.txt",
+      "type" : "text/plain",
+      "size" : 987
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "function_driver::0",
+    "time" : {
+      "start" : 1591077030100,
+      "stop" : 1591077032283,
+      "duration" : 2183
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login_page_class_load::0",
+    "time" : {
+      "start" : 1591077030100,
+      "stop" : 1591077030100,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "register_page_class_load::0",
+    "time" : {
+      "start" : 1591077030099,
+      "stop" : 1591077030099,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Register_page_case"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Register"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.Register"
+  }, {
+    "name" : "suite",
+    "value" : "test_register_page_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_register_page_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NTLLTVC"
+  }, {
+    "name" : "thread",
+    "value" : "12408-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.Register.test_register_page_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "测试用例位置",
+    "url" : "https://www.sina.com",
+    "type" : "test_case"
+  }, {
+    "name" : "连接跳转百度",
+    "url" : "https://www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c051d3fc82bf3083.json",
+  "parameterValues" : [ ]
+}

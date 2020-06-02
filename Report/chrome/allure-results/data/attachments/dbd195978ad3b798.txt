@@ -1,0 +1,13 @@
+13:50:38 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+13:50:40 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="e6d6d8bb561815d775ebaae47426dd02", element="4aada7b8-71e8-43ae-8460-673fd09551e8")>
+13:50:40 INFO 元素对象点击成功
+13:50:40 INFO 正在定位元素信息：定位方式->class name,value值->RegisterBtn
+13:50:42 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="e6d6d8bb561815d775ebaae47426dd02", element="27c80f52-a1ba-4f80-a6b5-a23a91a964ac")>
+13:50:42 INFO 元素对象点击成功
+13:50:42 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
+13:50:44 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="e6d6d8bb561815d775ebaae47426dd02", element="6309c622-1e9e-4df0-9ea7-fb24ee958db3")>
+13:50:44 INFO 元素text值：手机号不能为空
+13:50:44 INFO 正在进行元素断言：断言方式->手机号不能为空：是否等于->登录
+13:50:44 ERROR 断言执行失败，错误信息为：
+13:50:44 INFO 正在进行截图操作：
+13:50:45 INFO 截图成功，picture_url为：Report/picture/2020-06-02-13_50_44.png

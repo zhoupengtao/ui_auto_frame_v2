@@ -7,13 +7,13 @@
       "name" : "Login",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "bf5ecdf8a41ee4ca",
+        "uid" : "6b16154b6f819c54",
         "parentUid" : "d30e595f4cf1cc34bc5d317b7efb522e",
         "status" : "passed",
         "time" : {
-          "start" : 1591016086299,
-          "stop" : 1591016093626,
-          "duration" : 7327
+          "start" : 1591076981814,
+          "stop" : 1591076987420,
+          "duration" : 5606
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -27,13 +27,73 @@
       "name" : "Register",
       "children" : [ {
         "name" : "执行测试用例用于登录模块",
-        "uid" : "30f0de2556ceddb6",
+        "uid" : "3d17f0fd3bbd5db1",
         "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
         "status" : "passed",
         "time" : {
-          "start" : 1591016101096,
-          "stop" : 1591016109955,
-          "duration" : 8859
+          "start" : 1591076992850,
+          "stop" : 1591076999907,
+          "duration" : 7057
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "8285e4d534c5b698",
+        "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1591077005319,
+          "stop" : 1591077015420,
+          "duration" : 10101
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "c051d3fc82bf3083",
+        "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1591077020771,
+          "stop" : 1591077030098,
+          "duration" : 9327
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "b6b5493b24015b27",
+        "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1591077035603,
+          "stop" : 1591077045230,
+          "duration" : 9627
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "9d15368d5a3b7b8c",
+        "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1591077050645,
+          "stop" : 1591077059981,
+          "duration" : 9336
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "执行测试用例用于登录模块",
+        "uid" : "549f6a20252ab7d0",
+        "parentUid" : "8db44d01b858e3aa4a02970c3398be4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1591077065361,
+          "stop" : 1591077076689,
+          "duration" : 11328
         },
         "flaky" : false,
         "parameters" : [ ]
