@@ -1,4 +1,10 @@
-# coding:utf-8
+# !/user/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2020/5/12 21:11
+# @Author  : chineseluo
+# @Email   : 848257135@qq.com
+# @File    : run.py
+# @Software: PyCharm
 import xlrd
 import xlwt
 

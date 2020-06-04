@@ -22,7 +22,7 @@ logging.config.dictConfig(pub_api.read_yaml(path.join(logger_config_path, 'loggi
 
 
 class MyLog:
-    def __init__(self,):
+    def __init__(self):
         self.logger = logging.getLogger('mylogger')
 
     def __console(self, level, message):

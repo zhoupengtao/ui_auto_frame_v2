@@ -1,6 +1,11 @@
-# coding:utf-8
+# !/user/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2020/5/12 21:11
+# @Author  : chineseluo
+# @Email   : 848257135@qq.com
+# @File    : run.py
+# @Software: PyCharm
 from Base.base import Base
-from selenium.webdriver.common.by import By
 from PageObject.elem_params import Register_page_elem
 
 
