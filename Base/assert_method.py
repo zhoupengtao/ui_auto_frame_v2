@@ -108,7 +108,7 @@ class Assert_method:
             logging.error('bool_value参数类型错误，必须传bool类型：exceptor=Ture/False')
         else:
             try:
-                logging.info("正在进行元素断言：断言方式->%s：是否等于False->%s" % bool_value)
+                logging.info("正在进行元素断言：断言方式->{}：是否等于False->{}}".format(False, bool_value))
                 assert False == bool_value
             except Exception as e:
                 logging.error("断言执行失败，错误信息为：{}".format(e))

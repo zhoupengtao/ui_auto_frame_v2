@@ -1,0 +1,21 @@
+15:28:30 INFO 元素名称为：InputWarningA，元素定位方式为：CLASS_NAME，元素对象值为：InputWarningA
+15:28:30 INFO 输出定位器信息：('class name', 'InputWarningA')
+15:28:30 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+15:28:30 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="6c6f2770d63b03fd912eed63798a9a92", element="991912d9-0a4c-4c62-b15e-2a8e134bdcc6")>
+15:28:30 INFO 元素对象点击成功
+15:28:30 INFO 元素名称为：Username，元素定位方式为：NAME，元素对象值为：Username
+15:28:30 INFO 输出定位器信息：('name', 'Username')
+15:28:30 INFO 正在定位元素信息：定位方式->name,value值->Username
+15:28:30 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="6c6f2770d63b03fd912eed63798a9a92", element="c4b9ca3a-4bb5-43eb-a1fb-5e9a9627907e")>
+15:28:31 INFO 元素对象输入值成功，值为：1
+15:28:31 INFO 元素名称为：RegisterBtn，元素定位方式为：CLASS_NAME，元素对象值为：RegisterBtn
+15:28:31 INFO 输出定位器信息：('class name', 'RegisterBtn')
+15:28:31 INFO 正在定位元素信息：定位方式->class name,value值->RegisterBtn
+15:28:31 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="6c6f2770d63b03fd912eed63798a9a92", element="cad50221-c33d-49d4-893e-8a1133e7b1bf")>
+15:28:31 INFO 元素对象点击成功
+15:28:31 INFO 元素名称为：error_return，元素定位方式为：XPATH，元素对象值为：/html/body/div[2]/form/div[1]/span
+15:28:31 INFO 输出定位器信息：('xpath', '/html/body/div[2]/form/div[1]/span')
+15:28:31 INFO 正在定位元素信息：定位方式->xpath,value值->/html/body/div[2]/form/div[1]/span
+15:28:31 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="6c6f2770d63b03fd912eed63798a9a92", element="800b46bc-e1de-4bda-9859-8b40daaead9d")>
+15:28:31 INFO 元素text值：手机号码格式不正确
+15:28:31 INFO 正在进行元素断言：断言方式->手机号码格式不正确：是否等于->手机号码格式不正确

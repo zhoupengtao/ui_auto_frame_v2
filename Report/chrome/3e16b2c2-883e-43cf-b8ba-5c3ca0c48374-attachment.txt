@@ -1,0 +1,17 @@
+15:27:53 INFO 元素名称为：InputWarningA，元素定位方式为：CLASS_NAME，元素对象值为：InputWarningA
+15:27:53 INFO 输出定位器信息：('class name', 'InputWarningA')
+15:27:53 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+15:27:53 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="24729a02f0b73427eb3afcd3a1a23261", element="94c4ab5a-9e6b-4f6c-90be-b7896255632d")>
+15:27:54 INFO 元素对象点击成功
+15:27:54 INFO 元素名称为：海外用户注册，元素定位方式为：LINK_TEXT，元素对象值为：海外用户注册
+15:27:54 INFO 输出定位器信息：('link text', '海外用户注册')
+15:27:54 INFO 正在定位元素信息：定位方式->link text,value值->海外用户注册
+15:27:54 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="24729a02f0b73427eb3afcd3a1a23261", element="523b980e-fb1b-4914-a7ba-fad9e9fda513")>
+15:27:54 INFO 元素对象点击成功
+15:27:54 INFO 元素名称为：country-code，元素定位方式为：CLASS_NAME，元素对象值为：country-code
+15:27:54 INFO 输出定位器信息：('class name', 'country-code')
+15:27:54 INFO 正在定位元素信息：定位方式->class name,value值->country-code
+15:27:54 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="24729a02f0b73427eb3afcd3a1a23261", element="d6692a22-2ea4-45a3-bea9-122d3da37c27")>
+15:27:54 ERROR 断言执行失败，错误信息为：Single '}' encountered in format string
+15:27:54 INFO 正在进行截图操作：
+15:27:54 INFO 截图成功，picture_url为：Report/picture/2020-06-04-15_27_54.png

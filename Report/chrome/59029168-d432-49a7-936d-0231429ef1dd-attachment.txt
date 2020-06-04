@@ -1,0 +1,16 @@
+15:28:03 INFO 元素名称为：InputWarningA，元素定位方式为：CLASS_NAME，元素对象值为：InputWarningA
+15:28:03 INFO 输出定位器信息：('class name', 'InputWarningA')
+15:28:03 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+15:28:03 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="b581d52dd38e09f0e56addf4f7e20342", element="0b930460-a087-494f-ae4e-9bc4f0e05301")>
+15:28:03 INFO 元素对象点击成功
+15:28:03 INFO 元素名称为：登录，元素定位方式为：LINK_TEXT，元素对象值为：登录
+15:28:03 INFO 输出定位器信息：('link text', '登录')
+15:28:03 INFO 正在定位元素信息：定位方式->link text,value值->登录
+15:28:03 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="b581d52dd38e09f0e56addf4f7e20342", element="a6abfc3e-6e5e-4386-bd75-e7a1d05d4c97")>
+15:28:03 INFO 元素对象点击成功
+15:28:03 INFO 元素名称为：InputTitleText，元素定位方式为：CLASS_NAME，元素对象值为：InputTitleText
+15:28:03 INFO 输出定位器信息：('class name', 'InputTitleText')
+15:28:03 INFO 正在定位元素信息：定位方式->class name,value值->InputTitleText
+15:28:03 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="b581d52dd38e09f0e56addf4f7e20342", element="7019f1b3-7578-472e-bc08-7e0f7885ebfb")>
+15:28:03 INFO 元素text值：登录
+15:28:03 INFO 正在进行元素断言：断言方式->登录：是否等于->登录

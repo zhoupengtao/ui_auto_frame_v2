@@ -190,7 +190,7 @@ def login_page_class_load(function_driver):
 
 ~~~python
 import pytest
-from PageObject.login_page import Login_page
+from PageObject.Login_page.login_page import Login_page
 
 @pytest.fixture(scope="function")
 def login_page_class_load(function_remote_driver):

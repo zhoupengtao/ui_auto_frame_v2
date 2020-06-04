@@ -1,0 +1,11 @@
+15:27:45 INFO 元素名称为：InputWarningA，元素定位方式为：CLASS_NAME，元素对象值为：InputWarningA
+15:27:45 INFO 输出定位器信息：('class name', 'InputWarningA')
+15:27:45 INFO 正在定位元素信息：定位方式->class name,value值->InputWarningA
+15:27:45 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="a74376b704670e565a61d7b1ebfc7bdb", element="e3a14603-9042-4af5-907f-d3e923143e4a")>
+15:27:45 INFO 元素对象点击成功
+15:27:45 INFO 元素名称为：Username，元素定位方式为：NAME，元素对象值为：Username
+15:27:45 INFO 输出定位器信息：('name', 'Username')
+15:27:45 INFO 正在定位元素信息：定位方式->name,value值->Username
+15:27:45 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="a74376b704670e565a61d7b1ebfc7bdb", element="36276ebc-8786-4958-9b81-3420091fd14e")>
+15:27:45 INFO 该元素对象获取placeholder成功，placeholder值为：手机号码
+15:27:45 INFO 正在进行元素断言：断言方式->手机号码：是否等于->手机号码

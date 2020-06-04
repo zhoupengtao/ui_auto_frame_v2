@@ -6,9 +6,9 @@
 # @Software: PyCharm
 
 import pytest
-from PageObject.login_page import Login_page
-from PageObject.buy_page import Buy_page
-from PageObject.register_page import Register_page
+from PageObject.Login_page.login_page import Login_page
+from PageObject.Buy_page.buy_page import Buy_page
+from PageObject.Register_page.register_page import Register_page
 
 
 @pytest.fixture(scope="function")

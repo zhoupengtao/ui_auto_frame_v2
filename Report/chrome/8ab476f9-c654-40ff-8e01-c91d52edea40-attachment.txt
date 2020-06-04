@@ -1,0 +1,10 @@
+15:27:33 INFO 用例编号编码：test_DLZC1
+15:27:36 INFO 元素名称为：Username，元素定位方式为：NAME，元素对象值为：Username
+15:27:36 INFO 输出定位器信息：('name', 'Username')
+15:27:36 INFO 正在定位元素信息：定位方式->name,value值->Username
+15:27:36 INFO 元素对象为：<selenium.webdriver.remote.webelement.WebElement (session="647f18e8de4f3c4a60c368dbf4033fc2", element="c9bb0fc3-fa24-44c6-8ffc-8efa7a9e8f52")>
+15:27:36 INFO 该元素对象获取placeholder成功，placeholder值为：邮箱/手机号码
+15:27:36 INFO 正在进行元素断言：断言方式->邮箱/手机号码：是否等于->手机号码
+15:27:36 ERROR 断言执行失败，错误信息为：
+15:27:36 INFO 正在进行截图操作：
+15:27:37 INFO 截图成功，picture_url为：Report/picture/2020-06-04-15_27_36.png

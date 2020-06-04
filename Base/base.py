@@ -11,8 +11,45 @@ import logging
 from Common.config_option import Config_option
 from Common.publicMethod import PubMethod
 
-#conf_path = os.path.join(os.path.dirname(__file__).rsplit("/", 2)[0], "Conf", "config.yaml")
+# conf_path = os.path.join(os.path.dirname(__file__).rsplit("/", 2)[0], "Conf", "config.yaml")
 conf_path = os.path.abspath("./Conf/config.yaml")
+
+
+def get_locator(page_elem_class, elem_name):
+    """
+
+    @param page_elem_class:传入页面元素对象
+    @param elem_name:传入自定义的元素名称
+    @return:
+    """
+    page_obj_elem = page_elem_class()
+    elems_info = page_obj_elem.info
+    for item in elems_info:
+        if item.info["elem_name"] == elem_name:
+            elem_locator = ("By.{}".format(item["data"]["method"]), item["data"]["value"])
+            method = item["data"]["method"]
+            value = item["data"]["value"]
+            logging.info("元素名称为：{}，元素定位方式为：{}，元素对象值为：{}".format(elem_name, method, value))
+            if method == "ID" and value is not None:
+                return elem_locator
+            elif method == "XPATH" and value is not None:
+                return elem_locator
+            elif method == "LINK_TEXT" and value is not None:
+                return elem_locator
+            elif method == "PARTIAL_LINK_TEXT" and value is not None:
+                return elem_locator
+            elif method == "NAME" and value is not None:
+                return elem_locator
+            elif method == "TAG_NAME" and value is not None:
+                return elem_locator
+            elif method == "CLASS_NAME" and value is not None:
+                return elem_locator
+            elif method == "CSS_SELECTOR" and value is not None:
+                return elem_locator
+            else:
+                logging.error("元素名称：{}，此元素定位方式异常，定位元素值异常，请检查！！！".format(elem_name))
+
+
 # Base层封装的是元素的操作方法
 class Base:
     def __init__(self, driver):
@@ -49,26 +86,22 @@ class Base:
         self.driver.get(self.get_login_url_from_config())
 
     def find_element(self, locator):
+        logging.info("输出定位器信息：{}".format(locator))
         """
         :param locator: 传入定位器参数locator=(By.XX,"value")
         :return: 返回元素对象
         """
-        # 方法二次封装Demo
-        # WebDriverWait(self, driver, timeout, poll_frequency=POLL_FREQUENCY, ignored_exceptions=None)
-        # elem = WebDriverWait(driver, timeout, t).until(lambda x: x.findElenmentById("name"))元素显示等待
-        # locator定位器，locator(by,value)即是传入元素定位器和元素值)
         if not isinstance(locator, tuple):
             logging.error('locator参数类型错误，必须传元祖类型：locator=(By.XX,"value")')
         else:
             logging.info("正在定位元素信息：定位方式->%s,value值->%s" % (locator[0], locator[1]))
             try:
-                time.sleep(2)
                 elem = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(
                     lambda x: x.find_element(*locator))
                 logging.info("元素对象为：{}".format(elem))
                 return elem
-            except:
-                logging.error("定位不到元素")
+            except Exception as e:
+                logging.error("定位不到元素，错误信息为:{}".format(e))
                 return print("定位不到元素")
 
     def find_elements(self, locator):
@@ -77,7 +110,8 @@ class Base:
         :return: 返回元素对象列表
         """
         try:
-            elems = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(lambda x: x.find_elements(*locator))
+            elems = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(
+                lambda x: x.find_elements(*locator))
             logging.info("元素组对象为：{}".format(elems))
         except Exception as e:
             logging.error("元素组对象获取失败，错误信息为：{}".format(e))
